@@ -1,0 +1,938 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+	<script src="https://kit.fontawesome.com/11d61c8f58.js" crossorigin="anonymous"></script>
+	<style>
+		*{	padding:0px;  margin:0px;	}
+			
+	.header{	background:url(https://cdn.pixabay.com/photo/2017/09/08/00/38/friend-2727307_1280.jpg);width:100%;height:100vh;background-attachment:fixed;background-position:center;background-size:cover;	postion:relative;	overflow:hidden;  }
+	.nav1{display: flex; background:#ee0e02;height:70px;justify-content:space-between;}
+	.nav1-h{display:flex;margin-inline-start: 50px;}
+	.nav1-h img{	width:77px;	} 
+	.nav1-h h1{margin-block-start:20px;font-size:30px;}          
+	.nav1 .nav-links{	width:500px;	}	               
+	.nav-links ul li{display:inline-block;	padding:15px;font-size:14px;position:relative;cursor:pointer;margin-block-start:13px;color:white;transition:0.5s;}
+	.nav-links ul li:active{color:#0000ff;}
+	.nav-links li::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;	background:#330000;  }
+	.nav-links li:hover::after{	width:100%;	}
+	.s1{display:flex; background:black; color:white;}
+	.left{display:flex; margin:14px;margin-inline-start:50px;width:310px;}
+	.left span{margin-inline:10px 30px;list-style: none;color:white;}
+	.left a{text-decoration: none;}
+	.left i{color:#ee0e02;}
+	.middle marquee{text-align: center;margin-block-start:15px;justify-content: space-around;}
+	.middle span{margin-inline:5px 25px;}
+	.right{display:flex;width:280px;margin-block-start:14px; }
+	.right span{color:white;}
+	.right a{text-decoration: none;}
+	.right i{padding-inline:50px 10px;color:#ee0e02;}
+    .nav{ background:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4));width:100;height:100%;color:white;display:grid;}
+	.nav .nav2{  	text-align:center;margin-block-start:250px;	}
+	.nav2 h1{	font-size:30px;}
+	.nav2 span{color:red;}
+	.nav2 p{    font-size:17px;  	}
+	.nav2 a{border:2px solid white;padding:10px 10px;color:white;text-decoration:none;position:relative;display:inline-block;}
+	.nav2 a::after{	content:'';	width:0%;	display:block;	margin:auto;	height:3px;	transition:0.5s;	background:red;}
+	.nav2 a:hover::after{	width:100%;	}
+
+	.header2{background-color:#f0f0f0;	width:100%;	height:90vh;	background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;	}
+	.h2-nav2-1{   padding-block:50px; text-align: center;}
+	.h2-nav2-1 h1{  font-size:30px;    padding-block:8px; color:#ff6600; }
+	.h2-nav2-1 p{   color:#666;   }
+	.h2-nav2-2{display:flex;justify-content:space-around;height:350px;margin-block-start:40px;}
+	.h2-nav2-2-1{background:white;width:420px;}
+	.h2-nav2-2-1 h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 28px;word-spacing: 5px;}
+	.h2-nav2-2-1 ol{padding-block:10px;overflow-y:scroll; height:265px; padding-left:35px;}
+	ol li::marker{color:red;}
+	.h2-nav2-2-1 li{padding:10px;   color:#555;}
+	.h2-nav2-2-1 li:hover{background-color:#9b9b9b;color:#ffffff;}
+
+	.header-p{width:100%;height:60vh;}
+	.header-p1{display:flex;}
+	.left-p{width:40%;text-align: justify;margin-block-start:80px;}
+	.left-p h1{font-size:30px;color:red;margin-inline:50px;border-bottom:2px solid red;display: inline-block;}
+	.left-p p{color:#666;padding-block-start:20px;padding-inline:50px;line-height:27px;}
+	.right-p{display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px 30px;grid-gap:20px 20px;height:200px;margin-block-start: 120px;margin-inline: 100px;}
+	.right-p-1{width:175px;height:85px;text-align: center;background:orange;}
+	.right-p-1 i{padding-block-start: 12px;}
+	.right-p-2{width:175px;height:85px;text-align: center;background:#ffff00;}
+	.right-p-2 i{padding-block-start: 12px;}
+	.right-p-3{width:175px;height:85px;text-align: center;background:#ccffff;}
+	.right-p-3 i{padding-block-start: 12px;}
+	.right-p-4{width:175px;height:85px;text-align: center;background:#ffcc00;}
+	.right-p-4 i{padding-block-start: 12px;} 
+	.right-p-5{width:175px;height:85px;text-align: center;background:#ff7373;}
+	.right-p-5 i{padding-block-start: 12px;}
+    .right-p-6{width:175px;height:85px;text-align: center;background:#66ff00;}
+	.right-p-6 i{padding-block-start: 12px;}
+	.right-p-7{width:175px;height:85px;text-align: center;background:#99ff00;}
+	.right-p-7 i{padding-block-start: 12px;}
+	.right-p-8{width:175px;height:85px;text-align: center;background:#59acff;}
+	.right-p-8 i{padding-block-start: 12px;}
+
+	.chancellor{height:70vh;background:#ffe8e8;}
+	.chanc-h{display: flex;height:520px}
+	.chanc-left{boredr:2px solid black;width:30%;height:150px; margin-inline-start:120px;margin-block-start:100px;text-align: center;}
+	.chanc-left h3{padding-block-start:10px;color:green;}
+	.chanc-right{width:70%;height:350px;margin-block-start:100px;margin-inline-end:100px;}
+	.chanc-right h1{font-size: 30px;border-bottom:2px solid red;display: inline-block;color:red;}
+	.chanc-right p{margin-block-start:30px;line-height:27px; color:#666; word-spacing:7px;}
+
+
+	.ache{height:70vh;background:#f8f8f8;  }
+	.ache-h{display:flex;  margin-inline-start: 100px;}
+	.ache-left{width:500px;padding-block-start:90px;}
+	.ache-left h1{font-size:30px;color:red;border-bottom:2px solid red;display: inline-block;}
+	.ache-left ul{padding-block-start:30px;}
+	.ache-left li{padding-block-end:10px; color:#555;}
+	.ache-right{display:flex;margin-inline-start:40px;text-align: center;padding-block-start:150px;}
+	.ache-right1 img{width:350px;height:240px; padding-inline-start: 20px; padding-block-end:10px;}
+	.ache-right1 h3{ color:#ff5f11;}
+	
+
+	.facilitates{text-align: center;height:110vh;}
+    .facilitates h1{ font-size:30px; color:red;margin-block-start: 50px;padding-block-start:20px;}
+    .facilitates p{font-size: 17px; color:#666; padding-top:10px;}
+    .f-row{display:flex; justify-content: space-around;}
+    .f-column{ border-radius: 10px; margin-block-start: 5%; width:380px;}
+    .f-column img{width:100%;border-radius: 10px;}
+    .f-column h1{  font-size:25px; color:#ff6600;}
+    .f-column p{   color:#666;  }
+    .facilitates a{padding:7px 7px;color:black;text-decoration:none;position:relative;display:inline-block;margin-block: 40px 50px;border-radius: 5px;background:#ff5bad;}
+    .facilitates a::after{	content:'';	width:0%;	display:block;	margin:auto;	height:2px;	transition:0.5s;	background:white;}
+    .facilitates a:hover::after{	width:100%;	}
+    .facilitates i{padding-inline:20px;color:black;}
+    .facilitates h3{word-spacing:5px;color:red;}
+	
+	.campus{  text-align:center; width:90%; margin:auto; margin-block:100px; }
+	.campus h1{ font-size:30px; color:red;}
+	.campus p{font-size: 17px; color:#666; padding-top:10px;}
+	.campus .row{ display: flex; justify-content:space-between; margin-block:100px;}
+	.row .campus-col{  overflow:hidden; flex-basis:32%;padding-top: 7px}
+	.campus-col img{ width:300px;  border-radius: 10px;transition:0.1s;}
+	.campus-col img:hover{border:2px solid red;}
+	.campus-col h1{ margin-top:10px;font-size:25px; color:#ff6600;}
+
+	.camp{height:80vh;}
+	.camp-h{display:flex;width:100%;height:80vh;}
+	.camp-left{width:700px;height:350px;margin-block-start: 65px;margin-inline:100px 50px;}
+	.camp-left img{width:470px;height:470px;border-radius:20px; }
+	.camp-right{margin-block-start:65px;margin-inline-end:30px;}
+	.camp-right h1{color:red; font-size:30px;border-bottom:2px solid red;display:inline-block;}
+	.camp-right p{text-align: justify;padding-block:20px;line-height:27px;color:#666;}
+	.camp-right2{display:grid; grid-template-columns: auto auto;text-align: center;grid-row-gap:17px; }
+	.camp-right2 i{padding-inline-end: 15px;color:#00db00;}
+	.camp-right3{display:flex;padding-inline-end: 100px;margin-block-start:30px;}
+	.camp-right3 h1{color:#00db00;font-size: 45px;border:none;}
+	.right3-1 {padding-inline-end: 100px;}
+	.camp-right a{margin-block-start: 50px;display:inline-block; text-align: center;text-decoration: none; color:white;padding:15px 15px;background:#00db00; border-radius: 10px;}
+	.camp-right a:active{background:#ff4848;color:black;}
+	.camp-right i{padding-inline-start:10px;}
+	.camp-right a::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;	background:white;  }
+	.camp-right a:hover::after{width:100%;	}
+
+	.notice{background-color:#f0f0f0;	width:100%;	height:140vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;}
+	.notice-m{   padding-block:50px; text-align: center;}
+	.notice-m h1{  font-size:27px;    padding-block:8px; color:#ff6600; }
+	.notice-m p{   color:#666;   }
+	.notice-h{display:flex;justify-content:space-around;height:350px;margin-block-start:40px;}
+	.notice-left1{background:white;width:420px;}
+	.notice-left1 h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 26px;word-spacing: 5px;}
+	.notice-left1 ol{padding-block:10px;height:265px;overflow-y:hidden; padding-left:30px;}
+	.notice-left1 ol li{padding-block:10px;   color:#555;margin-inline-end:15px;cursor: pointer;}
+	.notice-left1 li:hover{background-color:#9b9b9b;color:#ffffff;}
+	.notice-left1 li img{padding-inline-start:10px;}
+	.notice-middle{background:white;width:420px;}
+	.notice-middle h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 26px;word-spacing: 5px;}
+	.notice-middle ol{padding-block:10px;overflow-y:scroll; height:265px; padding-inline-start:10px;}
+	.notice-middle li{padding:10px;   color:#555;display:flex;}
+	.notice-middle .li{background:#ff6600;width:60px;height:40px;color:white;text-align: center;padding-block-start:3.5px;}
+	.notice-middle span:hover{background-color:#9b9b9b;color:#ffffff;}
+	.notice-middle span{margin-inline-start:14px;width:400px;height:50px;cursor: pointer;color:#555;}
+	.notice-right{background:white;width:430px;}
+	.notice-right h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 26px;word-spacing: 5px;}
+	.notice-right ol{padding-block:10px;overflow-y:scroll; height:265px; padding-inline:35px;}
+     ol li::marker{color:red;}
+	.notice-right li{padding:10px;   }
+	.notice-right li:hover{background-color:#9b9b9b;color:#ffffff;}
+	.notice-right img{margin-inline-end:10px;}
+	.notice-right span{text-align:left;cursor: pointer;color:#555;}
+
+	.info{display:flex;justify-content:space-around;height:350px;margin-block-start:60px;}
+	.info-left{background:white;width:420px;}
+	.info-left h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 26px;word-spacing: 5px;}
+	.info-left ol{padding-block:10px;height:265px;overflow-y:hidden; padding-left:30px;}
+	.info-left ol li{padding-block:15px;   color:#555;margin-inline-end:15px;display:flex;}
+	.info-left span:hover{background-color:#9b9b9b;color:#ffffff;}
+	.li-1 img{width:35px;height:35px;}
+	.info-left li span{margin-inline-start:10px;display:block;width:83%;padding-left:20px;padding-block-start:10px;cursor: pointer;}
+	.info-middle{background:white;width:420px;height:350px;}
+	.info-middle h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 26px;word-spacing: 5px;}
+	.info-middle-1{display:flex;padding-block:10px;overflow-y:hidden; padding-left:25px;text-align: center;}
+	.info-middle-1 img{width:100px;height:50%;margin-inline-end:15px;cursor: pointer}
+	.middle-p{padding-block-start:10%; color:#555;}
+	.middle-p p{padding-block-start:10px;}
+	.info-right{background:white;width:420px;}
+	.info-right h1{background:#ff6600;text-align: center;color:white;padding-block:8px;font-size: 26px;word-spacing: 5px;}
+	.right-img{padding-block:17px;height:265px; padding-inline:27px;}
+	.right-img img{width:365px; height:270px;cursor:pointer;}
+	.middle-p h2{color:#ff42a0;border-bottom:1px solid red;display: inline-block;}
+
+	.gallery{	width:100%;	height:90vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;background:#fffbfb;}
+	.gallery-h{ padding-block:30px; text-align: center;}
+	.gallery-h h2{color:red; font-size:30px;border-bottom:2px solid red;display:inline-block;margin-block-end:35px;}
+	.gallery-img{display: grid;grid-template-columns: auto auto auto auto;width:1300px;height:470px;margin-left:85px;grid-gap:10px 10px;}
+	.gallery-h img{width:314px;height:227px;}
+
+	.rating{width:100%;text-align: center; margin:auto;background:#f4f4f4;}
+	.rating h1{ font-size:30px; padding-block-start:30px; color:red;}
+	.rating p{   color:#666;   }              
+	.r-row{display:flex;justify-content:space-around;}
+	.r-column{border-radius: 5px; margin-block: 5%; width:380px;background-color:#ffeaea;padding-left: 5px; flex-basis:30.5%; display:flex; text-align: left; height:165px; padding-top: 10px;}
+	.r-column img{height:50px; border-radius:50%; padding-left: 5px;margin-right: 20px; }
+	.r-column h3{ padding-left:90px; padding-top: 8px;}
+	.r-column .symbol{text-align:center;padding-top:5px;width:120px;height:20px;margin-left:78px; }
+	.r-column i{color:red; }
+	.r-column-middle{border-radius: 5px; margin-block: 5%; width:380px;background-color:#ffeaea;padding-left: 5px; flex-basis:30.5%; display:flex; text-align: left; height:165px; padding-top: 10px;}
+	.r-column-middle img{height:50px; border-radius:50%; padding-left: 5px;margin-right: 20px; }
+	.r-column-middle h3{ padding-left:70px;padding-top: 3px;}
+	.r-column-middle .symbol{text-align:center;padding-top:5px;width:120px;height:20px;margin-left:80px; }
+	.r-column-middle i{color:red; }
+
+	.placement{background-color:#383838;	width:100%;	height:80vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;}
+	.placement-h{display:flex;justify-content: space-around;padding-block-start:60px;color:white;margin-block-end:50px;}
+	.placement-left{margin-block-start:70px;margin-inline-start:150px;width:500px;}
+	.placement-left #h1{font-size: 40px;border-bottom: 2px solid #ff6600;;display: inline-block;padding-block-end:0px;color:#ff6600;;}
+	.placement-left h1{padding-block:15px;}
+	.placement-left h2{padding-block-end:7px;}
+	.placement-left h3{padding-block-end:5px;}
+	.placement .marquee{width:95%;margin:auto;}
+	.placement-right{display:grid;grid-template-columns: auto auto auto auto;grid-gap:10px 10px;}
+
+	.cta{ background: url(https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2019/11/0/0/college-class-iStock-001.jpg?ve=1&tl=1); width:85%; height:50vh; margin:auto;text-align: center;margin-block:80px;}
+	.cta .cta-n{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));width:100%;height:100%;color:white;}
+	.cta-n h1{padding-top: 180px;font-size:30px;padding-bottom:30px;}	
+	.cta-n a{color:white; text-decoration:none; border:1px solid white;padding:10px 10px;display: inline-block;}
+    .cta-n a::after{content:'';	width:0%;display:block;margin:auto;height:2px;transition:0.5s;background:red;	}
+	.cta-n a:hover::after{width:100%;	}
+
+	.sub-clg{background-color:#f0f0f0;	width:100%;	height:110vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;text-align: center;}
+	.sub-clg h1{margin-inline:30%;color:black;;padding-block-start: 40px;border-bottom:2px solid #ff6600;display:inline-block;}
+	.sub-clg h1 span{color:red;}
+	.sub-clg-h{display:grid;grid-template-columns: auto auto auto auto auto;width:95%;margin:auto;padding-top:30px;text-align: center;grid-gap: 30px 15px;margin-bottom:14px;height:84vh;}
+	.clg-img{width:260x;height:270px;}
+	.clg-img h3{font-size:18px;margin-top: 10px;}
+	.clg-img img{width:100%;height:87%;}
+	.sub-clg #a{padding:10px 15px;color:white;display:inline-block; text-align: center;text-decoration: none;background:#00db00; border-radius: 5px;transiton:2s;}
+	.sub-clg #a::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;	background:white;  }
+	.sub-clg #a:hover::after{width:100%;	}
+	.sub-clg #a:active{background:#ff4848;color:black;}
+
+	.footer{ text-align:center;width:85%;margin:auto; }
+	.footer h3{border-bottom:3px solid red; display:inline-block;padding-top:30px;}
+	.footer p{margin-block:30px;color:#666; }
+	.footer i{color:red; margin:10px;padding-bottom: 50px;}
+
+	.footer2{background-color:black;width:100%;	height:55vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;color:white;}
+	.footer2-h{display:grid;grid-template-columns: auto auto auto auto;justify-content: space-around;margin-block-end:30px;}
+	.footer2-h h2{margin-block:30px 15px;color:red;}
+	.footer2-left1{font-size: 15px;line-height:30px;}
+	.footer2-left1 span{cursor:pointer;}
+	.footer2-left1 span:hover{color:#ff00ff;}
+	.footer2-left1 i{color:#ff5959;padding-inline-end:15px;}
+	.footer2-left1 img{border-radius: 50%;height:20px;padding-inline:5px;margin-block-start: 20px;}
+	.footer2 h3{text-align: center;border-top: 1px solid white;padding-block-start:20px;display: block;}
+	
+
+
+	</style>
+
+</head>
+<body>
+	<section class="header">
+		<div class= "nav1">
+			<div class="nav1-h">
+				<img src="D:\new downloads\project images\University-PNG-HD-Image.png">
+				<h1>JNTU ANATHAPUR UNIVERSITY</h1>
+			</div>
+		
+			<div class = " nav-links">
+			   <ul>
+				    <a href="Uindex.html"><li>HOME</li></a>
+					<a href="Uabout.html"><li>ABOUT</li></a>
+					<a href="Ucourse.html"><li>COURSE</li></a>
+					<a href="Ublob.html"><li>BLOG</li></a>
+					<a href="Ucontact.html"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="s1">
+			<div class="left">
+				<a href=""><i class="fa-solid fa-lock"></i><span>Staff Login</span></a>
+				<a href=""><i class="fa-solid fa-lock"></i></i><span>Student Login</span></a>
+			</div>
+			<div class="middle">
+				<marquee>
+					<img src="D:\new downloads\project images\new.gif"><span>Examnination Notification</span> 
+					<img src="D:\new downloads\project images\new.gif"><span>Get Ready To Explore The Genius In You With Genius 2023<span> 
+					<img src="D:\new downloads\project images\new.gif"><span>Enrollment Form Notification 2022 23</span>
+				</marquee>
+					
+			</div>
+			<div class="right">
+				<a href=""><i class="fa fa-comment"></i><span>Admissions</span></a>
+			</div>
+		</div>
+		<nav class="nav">	
+			<div class="nav2">
+			    <h1>World's<span> Biggest</span> University</h1><br>
+			    <p>Your Educated, Your Certfication is in Your Degree. You may Think of it as the Ticket to the good Life, Let me ask You to think of an alternative,<br>" Think of it is Your ticket to Change the World " 
+			    </p><br>
+			    <a href = "Uabout.html">Visit Us To Know More</a>	
+		   </div>
+		</nav>
+	</section>
+	<!---------------------------------------------------courses---------------------------------->
+	<div class="header2">
+		<div class="h2-nav2-1">
+			<h1>Course We Offer</h1>
+			<p>If you're looking to take your career to the next level, you need to consider what skills you want to develop and how best to do it.</p>
+		</div>
+        <div class = "h2-nav2-2">
+			<div class="h2-nav2-2-1">
+			    <h1>Bachelor Of Technology</h1>
+			    <ol>
+				    <li>Mechanical Engineering</li>
+				    <li>Electrical Engineering</li>
+				    <li>Electrical & Communication Engg</li>
+				    <li>Computer Science Engg</li>
+				    <li>Aeronautical Engineering</li>
+				    <li>Bio-Technology</li>
+				    <li>Chemical Engineering</li>
+				    <li>Civil Engineering</li>
+				    <li>Computer Science & Systems Engineering</li>
+		   	        <li>Electronics & Control Engineering</li>
+			        <li>Electronics and Computer Engineering</li>
+				    <li>Information Technology</li>	
+				    <li>Mechanical Engineering (Mechatronics)</li>
+				    <li>Electronics and Instrumentation Engineering</li>	
+			    </ol>
+			</div>
+			<div class="h2-nav2-2-1">
+			    <h1>Master Of Technology</h1>
+			    <ol>
+				    <li>Bachelor Of Architecture</li>
+				    <li>Advanced Manufacturing Systems</li>
+				    <li>Bio-Technology</li>
+				    <li>CAD/CAM</li>
+				    <li>Civil Engineering</li>
+				    <li>Communication Systems</li>
+				    <li>Computer Aided Structural Engineering</li>
+				    <li>Computer Networks</li>
+				    <li>Computer Science</li>
+				    <li>Computer Science and Engineering</li>
+				    <li>Control Systems</li>
+				    <li>Digital Electronics and Communication Systems</li>
+				    <li>Digital Systems & Computer Electronics</li>
+				    <li>Electrical Power Engineering</li>
+				    <li>Electrical Power Systems</li>
+				    <li>Electronics and Communication Engineering</li>
+				    <li>Embedded Systems</li>
+				    <li>Embedded Systems and VLSI</li>
+				    <li>Geotechnical Engineering</li>
+				    <li>EHighway Engineering</li>
+				    <li>Information Technology</li>     
+			    </ol>
+			</div>
+			<div class="h2-nav2-2-1">
+			    <h1>M.Pharmacy</h1>
+			    <ol>
+				    <li>Hospital and Clinical Pharmacy</li>
+				    <li>Industrial Pharmacy</li>
+				    <li>Pharmaceutical Analysis</li>
+				    <li>Pharmaceutical Analysis & Quality Control</li>
+				    <li>Pharmaceutical Analysis and Quality Assurance</li>
+				    <li>Pharmaceutical Chemistry</li>
+				    <li>Pharmaceutical Technology</li>
+				    <li>Pharmaceutics</li>
+				    <li>Pharmaceutics-Drug Regulatory Affairs</li>
+				    <li>Pharmacognosy</li>
+				    <li>Pharmacology</li>
+				    <li>Pharmacy Practice</li>
+			    </ol>
+			</div>
+	    </div>	
+	</div>
+		<!-------------------------------------------------our popular courses---------------------------------->
+<div class="header-p">
+	<div class="header-p1">
+		<div class="left-p">
+			<h1>Our Popular Courses :</h1>
+			<p>The university offers undergraduate, postgraduate and doctorate level courses with various specializations. Few popular courses offered by JNTU Anantapur are mentioned below: Bachelor of Technology [B.Tech] Bachelor of Pharmacy [B.Pharma] Master of Business Administration [MBA] Master of Technology [M.Tech],Doctor of Philosophy [Phd] Master of Computer Application [MCA] Bachelor`s Degree of Computer [BDC] Diploma of Computer Application [DCA].</p>
+		</div>
+		<div class="right-p">
+			<span class="right-p-1">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Bachelor of Technology [B.Tech]</span>
+			</span>
+			<span class="right-p-2">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Bachelor of Pharmacy [B.Pharma]</span>
+			</span>
+			<span class="right-p-3">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Master of Business Administration [MBA]</span>
+			</span>
+			<span class="right-p-4">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Doctor of Philosophy [Phd]</span>
+			</span>
+			<span class="right-p-5">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Master of Computer Application [MCA]</span>
+			</span>
+			<span class="right-p-6">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Bachelor`s Degree of Computer [BDC]</span>
+			</span>
+			<span class="right-p-7">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Diploma of Computer Application [DCA]</span>
+			</span>
+			<span class="right-p-8">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Master of Technology [M.Tech]</span>
+			</span>
+		</div>
+
+	</div>
+</div>
+<!---------------------------------------------------Chairman---------------------------------->
+<div class="chancellor">
+    <div class="chanc-h">
+    	<div class="chanc-left">
+    		<img src="https://www.jntua.ac.in/wp-content/uploads/2023/03/sabdulnazeer.jpg">
+    		<h3>Shri S Abdul Nazeer<br>Hon’ble Governor of Andhra Pradesh</h3>
+    	</div>
+    	<div class="chanc-right">
+    		<h1>Chancellor</h1><br>
+    		<p>S. Abdul Nazeer (born 5 January 1958) is a former judge of the Supreme Court of India, who is serving as the 24th Governor of Andhra Pradesh. He is also former judge of the Karnataka High Court. He was appointed as the Governor of Andhra Pradesh on 12 February 2023.
+    		Abdul Nazeer was born into a Muslim family belonging to the Dakshina Kannada district of Karnataka, that is coastal Karnataka. He is the son of Fakir Saheb and he has five siblings. He grew up in Beluvai/Moodbidri and completed his B.Com degree at Mahaveera College, Moodbidri. He later obtained a law degree from SDM Law College, Mangalore.(formerly known as "Sri Dharmasthala Manjunatheshwara Law College").</p>
+    	</div>
+    </div>
+
+</div>
+<!------------------------------------------------Achievements---------------------------------->
+
+    <div class="ache">
+    	<div class="ache-h">
+    		<div class="ache-left">
+    			<h1>Achievements</h1>
+    			<ul>
+    				<li>Approved by A.I.C.T.E.</li>
+    				<li>Recognized by U.G.C under the sections 12(B) and 2(f) of the U.G.C act and eligible to receive central assistance</li>
+    				<li>One of the only 8 Govt. Colleges in the State got World Bank aided Technical Education Quality Improvement Project – II (TEQIP-II)</li>
+    				<li>Selected by the Govt. of India as one of the QEEE (Quality Enhanced Engineering Education) centre in the country.</li>
+    				<li>Awarded as “Excellent Technical Education Institution in A.P” by CMAI Association</li>
+    				<li>All-round champions in the University Games</li>
+    				<li>All-round champions in the University Games</li>
+    			</ul>
+    		</div>
+    		<div class="ache-right">
+    			<div class="ache-right1">
+    				<img src="D:\new downloads\project images\achievement-1.jpg">
+    				<h3>Aword For The Best Campus University</h3>
+    			</div>
+    			<div class="ache-right1">
+    				<img src="D:\new downloads\project images\gallery-3.jpg">
+    				<h3>Welcome to the Best Private University <br>in Andhra Pradesh</h3>
+    		    </div>
+
+    			
+    		</div>
+    	</div>
+    </div>
+		<!---------------------------------------------------facilitates---------------------------------->
+	<div class="facilitates">
+		<h1>Our Facilities</h1>
+		<p>College facilities extends to affiliated,distance learning class rooms Environments,& Agencies or institutions that <br> have educational agreements with whatcom community college </p>
+		<div class="f-row">
+			<div class="f-column">
+				<img src="D:\new downloads\project images\library.png">
+				<h1>World Class Library</h1>
+				<p>It houses a vast Collection of Books, Journals, periodicals & others resources carefully curated to support the academic pursults of students & faculty</p>
+			</div>
+			<div class="f-column">
+				<img src="D:\new downloads\project images\basketball.png">
+				<h1>Largest Play Ground</h1>
+				<p>A playground is a place is designed to provide an environment for childrens that facilities play,typically outdoors</p>
+			</div>
+			<div class="f-column">
+				<img src="D:\new downloads\project images\cafeteria.png">
+				<h1>Taste and Healty Food</h1>
+				<p>Taste buds are sensory organs that are found on your tongue & allow you to experience taste that are sweety,salty,sour,& bitter</p>
+			</div>
+		</div>
+		<h3>For More Facilities<i class="fa fa-hand-o-right"></i></i><a href="Ufacilities.html"> Click Here</a><h3>
+	</div>
+	<!-----------------------------------------------Campus information---------------------------------->
+	<div class="camp">
+		<div class="camp-h">
+			<div class="camp-left">
+				<img src="D:\new downloads\project images\about-us.png">
+			</div>
+			<div class="camp-right">
+				<div class="camp-right1">
+					<h1>Campus Information</h1>
+					<p>At the time when there was only one Government Engineering College at Guindy Madras for the entire former composite Madras province, three new Government Engineering Colleges were sanctioned under post second world war reconstruction programme, one at Coimbatore (1945), one at Kakinada(1946) and one at Anantapur(1946). The college of Engineering Anantapur was temporarily located at Guindy in 1946 and later shifted to Anantapur in 1948.</p>
+				</div>
+				<div class="camp-right2">
+					<span><i class="fa-solid fa-check"></i>The Best Private University</span>
+					<span><i class="fa-solid fa-check"></i>The Best Private University</span>
+					<span><i class="fa-solid fa-check"></i>The Best Private University</span>
+					<span><i class="fa-solid fa-check"></i>The Best Private University</span>
+				</div>
+				<div class="camp-right3">
+					<div class="right3-1">
+						<h1>75+</h1>
+						<span>Year of Experience</span>
+					</div>
+					<div class="right3-1">
+						<h1>75+</h1>
+						<span>Global of Students</span>
+					</div>
+				</div>
+				
+				<a href="Ublob.html">Start Your Application<i class="fa-solid fa-arrow-right"></i></a>
+				
+			</div>
+		</div>
+	</div>
+	<!---------------------------------------------------notice board---------------------------------->
+	<div class="notice">
+		<div class="notice-m">
+			<h1>======&nbsp;Updates&nbsp;======</h1>
+			<p>If you're looking to take your career to the next level, you need to consider what skills you want to develop and how best to do it.</p>
+		</div>
+        <div class = "notice-h">
+			<div class="notice-left1">
+			    <h1>Latest News</h1>
+			    <ol>
+			    	<marquee direction="up">
+				    <li><span>31 july 2023 Ph D merit list part 01_16 may 2023</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>31 july 2023 Ph D merit list Part 02_8 may 2023</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>24 june 2023 Incubation Center</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>2 August 2023 Instituitional Distinctiveness</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>31 june 2023 Academic Calender Session 2023-2024</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>16 june 2023 Ph D merit list Part 01_16 feb 2023</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>18 june 2022 Ph D merit list Part 02_16 feb 2023</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>17 August 2023 Consolidate Academic Calender</span><img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>31 july 2023 MCA IV & III sem (R21, R20 & R17) Reg & Supple Aug/Sep 2023 Exams – Information Circular from DE</span><img src="D:\new downloads\project images\new.gif"></li>
+		   	        <li><span>31 july 2023 MBA IV & III sem (R21 & R17) Reg & Supple Aug/Sep 2023 Exams – Information Circular from DE
+                           <img src="D:\new downloads\project images\new.gif"></li>
+			        <li><span>31 july 2023 B.Tech First Year Academic Calendar for AY 2023-24
+                           <img src="D:\new downloads\project images\new.gif"></li>
+				    <li><span>31 july 2023 B.Tech Second Year Academic Calendar for AY 2023-24</span><img src="D:\new downloads\project images\new.gif"></li>
+				</marquee>
+
+			    </ol>
+			</div>
+			<div class="notice-middle">
+			    <h1>UpComing Events</h1>
+			    <ol>
+			    	<li>
+				    	<div class="li">
+				    		<p>8<br>Aug</p>
+				    	</div>
+				    	<span>Notifications for B.Tech II Yr II sem (R20, R19 & R15) Reg & Supple 2023 Exams.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>3<br>Aug</p>
+				    	</div>
+				    	<span>Notifications for MBA II & I sem (R21 & R17) Reg & Supple Aug/Sep 2023 Exams</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>30<br>Sep</p>
+				    	</div>
+				    	<span>Notifications for B.Tech II Yr I sem (R20, R19 & R15) Supple Aug/Sep 2023 Exams.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>28<br>Sep</p>
+				    	</div>
+				    	<span>Conducted its 2nd convocation ceremony.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>25<br>Sep</p>
+				    	</div>
+				    	<span>Seminar is conducted on B.com courses.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>20<br>Sep</p>
+				    	</div>
+				    	<span>MCA IV & III sem (R21, R20 & R17) Reg & Supple Aug/Sep 2023 Exams – Information Circular from DE</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>20<br>Sep</p>
+				    	</div>
+				    	<span>Seminar is conducted on BCA courses.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>7<br>Sep</p>
+				    	</div>
+				    	<span>Notifications for MBA IV & III sem (R21 & R17) Reg & Supple Aug/Sep 2023 Exams.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>7<br>Sep</p>
+				    	</div>
+				    	<span>Notifications for MCA IV & III sem (R21, R20 & R17) Reg & Supple Aug/Sep 2023 Exams.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>27<br>june</p>
+				    	</div>
+				    	<span>Results of Pharm.D III, IV & V Yrs Supple June 2023 Exams – CIRCULAR from CE.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>20<br>june</p>
+				    	</div>
+				    	<span>Results of Pharm.D III, IV & V Yrs Supple June 2023 Exams – CIRCULAR from CE.</span>
+				    </li>
+				    <li>
+				    	<div class="li">
+				    		<p>7<br>june</p>
+				    	</div>
+				    	<span>Substitute Subjects Timetable for B.Tech III Yr I sem (R20) Supple August 2023 Exams.</span>
+				    </li>
+			    </ol>
+			</div>
+			<div class="notice-right">
+			    <h1>Notice Board</h1>
+			    <ol>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>Participate in Climate Correction Day (CCD) Challenge for Mission Life</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>South Zone University Table (man) Tournament 2023-2024</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>PhD Registration Form for Selected Candidates</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>List of Activities organised under TEQIP-III</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>Documents for empanellment of vendor for A Class contyractor</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>School of Architecture College Level counselling 2022-23</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>  FDP on “Insights into Experiential Learning and Clinical Education in Pharmacy” from 21st to 25th August, 2023 at MIPER, Kurnool Dist .,</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>
+                        Recognition of research Centres for Ph.D applications called for 2023-24</span></li>
+				    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>
+                             Substitute Subjects Timetable for B.Tech I Yr II sem (R20) Reg & Supple July/August 2023 Exams</span></li>
+                    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>
+                             Timetables for B.Tech III Yr I sem (R20, R19 & R15) Supple August 2023 Exams</span></li>
+                    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>
+                             Substitute Subjects Timetables for B.Tech III Yr II sem (R20 & R19) Reg & Supple August 2023 Exams</span></li>
+                    <li><img src="D:\new downloads\project images\notice-board-img.png"><span>
+                             JNTUA, Exam Branch – University Examinations – Date: 25.07.2023 – Postponed & Rescheduled Circualr from DE</span></li>                           
+			    </ol>
+			</div>
+	    </div>
+	    <!---------------------------------------------------Information---------------------------------->
+	    <div class = "info">
+			<div class="info-left">
+			    <h1>Useful Information</h1>
+			    <ol>
+				    <li>
+				    	<div class="li-1">
+				    		<img src="D:\new downloads\project images\info-list-img1.png">
+				    	</div>
+				    	<span>Online Service</span>
+				    </li>
+				    <li>
+				    	<div class="li-1">
+				    		<img src="D:\new downloads\project images\info-list-img2.png">
+				    	</div>
+				    	<span>Online Results</span>
+				    </li>
+				    <li>
+				    	<div class="li-1">
+				    		<img src="D:\new downloads\project images\info-list-img3.png">
+				    	</div>
+				    	<span>Exam Time Table</span>
+				    </li>
+				    <li>
+				    	<div class="li-1">
+				    		<img src="D:\new downloads\project images\info-list-img3.png">
+				    	</div>
+				    	<span>Tenders</span>
+				    </li> 	
+			    </ol>
+			</div>
+			<div class="info-middle">
+			    <h1>Hon`ble Governer of A.P</h1>
+			    <div class="info-middle-1">
+			    	<img src="https://www.jntua.ac.in/wp-content/uploads/2023/03/sabdulnazeer.jpg">
+			        <div class="middle-p">
+			    	    <h2>Shri S Abdul Nazeer</h2>
+			            <p>Hon’ble Governor of Andhra Pradesh</p>
+			        </div>
+			    </div>
+			    <div class="info-middle-1">
+			    	<img src="https://www.jntua.ac.in/wp-content/uploads/2021/05/dr-ramanaidu-1.jpg">
+			        <div class="middle-p">
+			    	    <h2>Dr.K.Rama Naidu</h2>
+			            <p>Principal of JNTU Ananthapur University</p>
+			        </div>
+			    </div> 
+			</div>
+			<div class="info-right">
+			    <h1>My College Certificate</h1>
+			    <div class="right-img">
+			    	<img src="https://www.consumercomplaints.in/thumb.php?complaints=2154431&src=707815609.png&wmax=900&hmax=900&quality=85&nocrop=1">
+			    </div>
+			</div>
+	    </div>		
+	</div>
+	<!--------------------------------------------------Gallery---------------------------------->
+	<div class="gallery">
+		<div class="gallery-h">
+			<h2>Gallery</h2>
+			<div class="gallery-img">
+				<img src="https://getmyuni.azureedge.net/college-images-test/jawaharlal-nehru-technological-university-jntu-anantapur/325cfd4379c14d368dd19c4ef7383abd.jpeg">
+				<img src="https://th.bing.com/th/id/OIP.V-Md4hHwFztvFYX_M9rWmQHaE7?pid=ImgDet&rs=1">
+				<img src="https://th.bing.com/th/id/R.6a141ae994fbc80a3afe234c7fde6137?rik=%2fCy6YT1SB1809Q&riu=http%3a%2f%2fshushrutigroupofinstitutions.com%2fimages%2fimg4.jpg&ehk=ZO09dm5zKfmg89MDhL5GqNyRhNPJAltAyASQateIPTY%3d&risl=&pid=ImgRaw&r=0">
+				<img src="https://i.ytimg.com/vi/I0nFDeXQPkI/maxresdefault.jpg">
+				<img src="https://th.bing.com/th/id/OIP.pH0s35n1j7eeJ3nNLIBMQAHaE7?pid=ImgDet&rs=1">
+				<img src="https://th.bing.com/th/id/OIP._sSGGt31jpESL9JAVcxcpgHaE8?pid=ImgDet&rs=1">
+				<img src="https://th.bing.com/th/id/OIP.eDSAU1ISzLUlujEgjxCCEwHaFj?pid=ImgDet&rs=1">
+				<img src="https://jntuasms.ac.in/wp-content/uploads/2021/11/DSC_6708-768x512.jpg">
+			</div>	
+		</div>
+	</div>
+	<!---------------------------------------------------Ratings---------------------------------->
+	<div class="rating"	>
+		<h1>What Our Student Says</h1>
+		<p>A person formally engaged in learning especially one enrolled in a school or college</p>
+		<div class="r-row">
+			<div class="r-column">
+				<img src="D:\new downloads\project images\user2.jpg">
+				<div>
+					<p>The some what old but its greener and has nice infrastructure that provides a good environment for students. As to clubs, there are many clubs established in our college like robotics, force ikshavaku,and so on which gives us the hand on experience</p>
+					<h3>David Byer </h3>
+					<div class="symbol">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-empty "></i>
+					</div>
+				</div>
+			</div>
+			<div class="r-column-middle">
+				<img src="D:\new downloads\project images\user1.jpg">
+				<div>
+					<p>The faculty was very good they teach as very well clearing all doubts they encouraged the students in both co-curriculum & extracurricular activities like singing dancing debates seminars.The campus life is awesome and full of joy,The placements are very goood 80% placements.</p>
+					<h3>Christene Berkley</h3>
+					<div class="symbol">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-empty "></i>
+					</div>
+				</div>
+			</div>
+			<div class="r-column">
+				<img src="D:\new downloads\project images\gallery-6.jpg">
+				<div>
+					<p>Many students got placed in our course. The average salary package offered was 4 LPA. The highest salary package offered was 6 LPA. The top recruiting company is Infosys. Roles offered for MBA students are under the category of HR.</p>
+					<h3>Ayesha pule </h3>
+					<div class="symbol">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-empty "></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---------------------------------------------------placement---------------------------------->
+	<div class="placement">
+		<div class="placement-h">
+			<div class="placement-left">
+				<h1 id="h1">Top Recruiters Companies</h1>
+				<h1>PLACEMENTS</h1>
+				<h2>2022-2023 Batch</h2>
+				<h3>Offers With Higher Package Of 40 LPA *</h3>
+				<p>Salary Included all</p>
+		    </div>
+			<div class="placement-right">
+				<img src="D:\new downloads\project images\recruiter-1.jpg">
+				<img src="D:\new downloads\project images\recruiter-2.jpg">
+				<img src="D:\new downloads\project images\recruiter-3.jpg">
+				<img src="D:\new downloads\project images\recruiter-4.jpg">
+				<img src="D:\new downloads\project images\recruiter-5.jpg">
+				<img src="D:\new downloads\project images\recruiter-6.jpg">
+				<img src="D:\new downloads\project images\recruiter-7.jpg">
+				<img src="D:\new downloads\project images\recruiter-8.jpg">
+				<img src="D:\new downloads\project images\recruiter-9.jpg">
+				<img src="D:\new downloads\project images\recruiter-10.jpg">
+				<img src="D:\new downloads\project images\recruiter-11.jpg">
+				<img src="D:\new downloads\project images\recruiter-12.jpg">
+				<img src="D:\new downloads\project images\recruiter-14.jpg">
+				<img src="D:\new downloads\project images\recruiter-15.jpg">
+				<img src="D:\new downloads\project images\recruiter-16.jpg">
+				<img src="D:\new downloads\project images\tcs.jpg">
+			</div>
+		</div>
+		<div class="marquee">
+		    <marquee direction="right">
+			    <img src="D:\new downloads\project images\recruiter-1.jpg">
+				<img src="D:\new downloads\project images\recruiter-2.jpg">
+				<img src="D:\new downloads\project images\recruiter-3.jpg">
+				<img src="D:\new downloads\project images\recruiter-4.jpg">
+				<img src="D:\new downloads\project images\recruiter-5.jpg">
+				<img src="D:\new downloads\project images\recruiter-6.jpg">
+				<img src="D:\new downloads\project images\recruiter-7.jpg">
+				<img src="D:\new downloads\project images\recruiter-8.jpg">
+				<img src="D:\new downloads\project images\recruiter-9.jpg">
+				<img src="D:\new downloads\project images\recruiter-10.jpg">
+				<img src="D:\new downloads\project images\recruiter-11.jpg">
+				<img src="D:\new downloads\project images\recruiter-12.jpg">
+				<img src="D:\new downloads\project images\recruiter-14.jpg">
+				<img src="D:\new downloads\project images\recruiter-15.jpg">
+				<img src="D:\new downloads\project images\recruiter-16.jpg">
+				<img src="D:\new downloads\project images\tcs.jpg">
+
+		    </marquee>
+	    </div>
+	</div>
+
+	<!---------------------------------------------------call to action---------------------------------->
+  <div class ="cta">
+  	<div class="cta-n">
+  		<h1>Enroll For Our Various Online Courses Anywhere From The World</h1>
+  		<a href="Ucontact.html">CONTACT US</a>
+  	</div>
+  </div>
+  <!--------------------------------------------------sub colleges---------------------------------->
+  <div class="sub-clg">
+  	<h1>Under the Colleges Of&nbsp;<span>JNTU</span>&nbsp;Ananthapur</h1>
+  	<div class="sub-clg-h">
+  		<div class="clg-img">
+  			<a href="https://www.srecnandyal.edu.in/"><img src="https://www.mymathews.com/media/gallery/Santhiram_Engineering_College_3_FpiWQyU.JPG"></a>
+  			<h3>Santhiram Engineering College</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="https://www.rgmcet.edu.in/"><img src="https://rgmcetblogger.files.wordpress.com/2017/11/pg-block-photo1.jpg"></a>
+  			<h3>Rajeev Gandhi Memorial College Of Engineering And Technology</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="https://www.gprec.ac.in/"><img src="https://th.bing.com/th/id/R.f85f73101a85dba4d06e92d18df830df?rik=rtaEm%2b41b2QKPA&riu=http%3a%2f%2fuploads.edubilla.com%2finstitution%2f30%2f70%2fg.pulla_reddy_engineering_college_autonomous_2.jpg&ehk=HRdUn8%2fYI0XqRx8EG4ff9zoJpeG7B5lpXvSLCD8wbp0%3d&risl=&pid=ImgRaw&r=0"></a>
+  			<h3>G.Pulla Reddy Engineering College</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="http://www.gpcet.ac.in/"><img src="https://images.static-collegedunia.com/public/college_data/images/appImage/13481_GCENG_APP.jpg?tr=c-force"></a>
+  			<h3>G.Pullaiah College Of Engineering And Technology</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="https://collegedunia.com/college/13548-geethanjali-college-of-engineering-and-technology-gcet-keesara-hyderabad"><img src="https://th.bing.com/th/id/R.ef8f4a5bbf59a0460d323e8db753c947?rik=EK0EtwUgDDxSsA&riu=http%3a%2f%2fwiredlasopa460.weebly.com%2fuploads%2f1%2f2%2f5%2f4%2f125492030%2f109747871.jpg&ehk=7FZbOULLr%2fvnDnBAMaKno6JvwzmSZzVadWDZ879FOVE%3d&risl=&pid=ImgRaw&r=0"></a>
+  			<h3>Geethanjali College Of Engineering And Tech</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="http://www.drkvsrit.ac.in/"><img src="https://images.static-collegedunia.com/public/college_data/images/campusimage/1501074331hostel.jpg"></a>
+  			<h3>Dr.K.V.Subba Reddy Institute Of Technology</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="https://alpha-cet.in/"><img src="https://images.static-collegedunia.com/public/college_data/images/appImage/12786_ALPHA.jpg?tr=c-force"></a>
+  			<h3>Alfa College Of Engineering And Technology</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="http://www.svrec.ac.in/"><img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/5219/2018/9/17/College%20Administrative%20Building%20View%20of%20SVR%20Engineering%20College%20Nandyal_Campus-View.png"></a>
+  			<h3>SVR Engineering College</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="https://acharyaedu.com/"><img src="https://images.static-collegedunia.com/public/college_data/images/appImage/57703_6.jpg"></a>
+  			<h3>Acharya College Of Engineering</h3>
+  		</div>
+  		<div class="clg-img">
+  			<a href="https://www.svce.ac.in/"><img src="https://th.bing.com/th/id/OIP.mayQmoldT6fYI6dvaHtsfQHaE8?pid=ImgDet&rs=1"></a>
+  			<h3>Sri Venkateswara College Of Engineering</h3>
+  		</div>
+  	</div>
+  	<a id="a" href="Uotherclgs.html"><h3>view more</h3></a>
+  </div>
+	<!--------------------------------------------------footer 1---------------------------------->
+	<div class="footer">
+		<h3>About Us</h3>
+		<p>A College and experinced staff allow them to test their abilities until they realise what they're best in.Promotes Confidence and Personal Growth. A college Provides Students with the Opportunities to acquire an educations that helps shape up their morals and thinking,and boosts their personal growth and confidence.</p>
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+		<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><i class="fa-brands fa-twitter"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+	</div> 
+	<!---------------------------------------------------footer 2---------------------------------->
+	<div class="footer2">
+		<div class="footer2-h">
+			<div>
+				<h2>Download</h2>
+			   <div class="footer2-left1">
+			   	    <span>Procedure for Organizing Graduation day</span><br>
+			     	<span>Guidelines for Donation</span><br>
+			    	<span>Research & Development</span><br>
+			    	<span>Annual Reports</span><br>
+			    	<span>Affiliated Colleges</span><br>
+			    	<span>Syllabus</span><br>
+			    	<span>Examination Branch Application Forms</span><br>
+			    	<span>News Letters</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Postal Contacts</h2>
+			   <div class="footer2-left1">
+			   	    <span>The Register,</span><br>
+			    	<span>JNTU University Ananthapur,</span><br>
+			    	<span>Ananthapuram-515002</span><br>
+			    	<span>Andhra Pradesh,Inndia</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Information Links</h2>
+			   <div class="footer2-left1">
+			    	<span>Placements</span><br>
+			    	<span>Online Training</span><br>
+			    	<span>Results</span><br>
+			    	<span>Registered Ph D Scholers</span><br>
+			    	<span>Anti Ragging</span><br>
+			    	<span>List Of Suggested Books Indian Authors</span><br>
+			    	<span>NSS Cell</span><br>
+			    	<span>Events</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Get In Touch</h2>
+			   <div class="footer2-left1">
+			   	   <i class="fa-solid fa-envelope"></i><span>Email:info@jntuananthapur.com</span><br>
+                   <i class="fa-brands fa-square-whatsapp"></i><span>Whatsap No:+91-123456789</span><br>
+                   <i class="fa-solid fa-address-book"></i><span>Contact No:+91-(123)-4567890</i></span><br>
+                   <i class="fa-solid fa-globe"></i><span>Website:Http://www.jntu.com</span><br>
+                   <a href="https://www.facebook.com/"><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=80&h=80&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><img src="https://th.bing.com/th?id=OSK.HNYBZh1b8THsU04fx-fRn4aQAqKMN2-KE_KCboGdg96d15U&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://in.linkedin.com"><img src="https://th.bing.com/th?id=OSK.HNYB5Zkp2MDvwR2nXmYMT4cVoTssZhyvU6zyn7sQOaGoGHc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://www.instagram.com/"><img src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+			   </div>
+			</div>
+			
+		</div>
+		<h3>Copyright @ 2023,Jntuananthour.com.All Rights are Reserved</h3>
+			
+			
+	</div>
+
+	
+ </body>
+</html>
+

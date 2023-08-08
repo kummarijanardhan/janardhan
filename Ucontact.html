@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+	<script src="https://kit.fontawesome.com/11d61c8f58.js" crossorigin="anonymous"></script>
+	<style>
+		*{	padding:0px;  margin:0px;	}		
+	.header{width:100%;height:86vh;margin-bottom:30px;}
+    .nav1{display: flex; background:#ee0e02;height:70px;justify-content:space-between;}
+    .nav1-h{display:flex;margin-inline-start: 50px;}
+    .nav1-h img{    width:77px; } 
+    .nav1-h h1{margin-block-start:20px;font-size:30px;}          
+    .nav1 .nav-links{   width:500px;    }                  
+    .nav-links ul li{display:inline-block;  padding:15px;font-size:14px;position:relative;cursor:pointer;margin-block-start:13px;color:white;transition:0.5s;}
+    .nav-links ul li:active{color:#0000ff;}
+    .nav-links li::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;  background:#330000;  }
+    .nav-links li:hover::after{ width:100%; }
+    .s1{display:flex; background:black; color:white;}
+    .left{display:flex; margin:14px;margin-inline-start:50px;width:310px;}
+    .left span{margin-inline:10px 30px;list-style: none;}
+    .left i{color:#ee0e02;}
+    .middle marquee{text-align: center;margin-block-start:15px;justify-content: space-around;}
+    .middle span{margin-inline:5px 25px;}
+    .right{display:flex;width:280px;margin-block-start:14px; }
+    .right i{padding-inline:50px 10px;color:#ee0e02;}
+    .nav{width:100%;height:70vh;position:relative;}
+    .nav{position:relative;background: url(https://potli.co.uk/wp-content/uploads/2017/10/contact-us-banner.jpg);background-attachment:fixed;background-position:center;background-size:cover;postion:relative; width:100%;height:70vh;}
+    .nav-sha{ background:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4));width:100%;height:100%;}
+    .nav h1{top:200px;left:45%;position: absolute;color:white;font-size: 30px;border-bottom: 2.5px solid red;display: inline-block;}
+
+	.location{width:90%; margin:auto; padding:10px 0px;}
+	.location h1{color:red;font-size: 30px;margin:30px 45%;border-bottom:2px solid black;display:inline-block; }
+	.location iframe{width:100%;}
+
+	.contact-us{width:90%;margin:auto;height:60vh;}
+	.contact-us .con-row{display: flex;height:60vh;}
+	.con-row .con-column-left{width:45%;padding-block:2%;}
+	.con-row .con-column-left h3{font-size: 20px; color:red;border-bottom: 2px solid red;display: inline-block;margin-left: 15%;margin-bottom: 20px;}
+	.con-column{padding:15px 20px;display: flex;width:70%;margin-inline: 10%;font-size: 17px; letter-spacing:0.7px;}
+	.con-column i{color:red;padding-block:10px;margin-right: 20px;}
+	.con-column p{color:#666;padding-block:5px;}
+	.con-column-right{width:60%;margin:50px 0px;height:370px;padding:10px 20px;}
+	.con-column-right img{margin-left: 35%;}
+	.con-column-right h1{color:#ff00ff;font-size:30px;display: inline-block;border-bottom: 2px solid #ff00ff; }
+	.con-column-right P{color:#ff00ff;margin-left: 35%;font-size: 25px;padding-top: 10px;}
+
+	.contact{width:100%;height:245vh;}
+	.contact-h{width:90%;margin:auto;}
+	.contact-m{margin-inline:10%;}
+	.contact-m h2{margin-block: 20px;font-size: 28px;color:red;border-bottom: 2px solid red;display: inline-block;}
+	.contact-m table{width:103%;border-top: 4px solid red;padding-top:10px; }
+	.contact-m th{height:45px;background:#ffa64d;font-size: 17px;}
+	.contact-m td{height:30px;padding-left:10px;}
+	.contact-m tr:nth-child(even){background:#91ffff;}
+	.contact-m tr:nth-child(odd){background:#ffff9b;}
+	.contact-m td:hover{background:red;color:white; }
+	
+	
+	.footer{ text-align:center;width:85%;margin:auto; margin-top:50px; }
+	.footer h3{border-bottom:3px solid red; display:inline-block;}
+	.footer p{margin-block:30px;color:#666; }
+	.footer i{color:red; margin:10px;padding-bottom: 50px;}
+
+	.footer2{background-color:black;width:100%; height:55vh;background-attachment:fixed;background-position:center; background-size:cover;postion:relative;color:white;}
+    .footer2-h{display:grid;grid-template-columns: auto auto auto auto;justify-content: space-around;margin-block-end:30px;}
+    .footer2-h h2{margin-block:30px 15px;color:red;}
+    .footer2-left1{font-size: 15px;line-height:30px;}
+    .footer2-left1 span{cursor:pointer;}
+    .footer2-left1 span:hover{color:#ff00ff;}
+    .footer2-left1 i{color:#ff5959;padding-inline-end:15px;}
+    .footer2-left1 img{border-radius: 50%;height:20px;padding-inline:5px;margin-block-start: 20px;}
+    .footer2 h3{text-align: center;border-top: 1px solid white;padding-block-start:20px;display: block;}
+	</style>
+
+</head>
+<body>
+	<!---------------------------------------------------Home---------------------------------->
+	<section class="header">
+        <div class= "nav1">
+            <div class="nav1-h">
+                <img src="D:\new downloads\project images\University-PNG-HD-Image.png">
+                <h1>JNTU ANATHAPUR UNIVERSITY</h1>
+            </div>
+        
+            <div class = " nav-links">
+               <ul>
+                    <a href="Uindex.html"><li>HOME</li></a>
+                    <a href="Uabout.html"><li>ABOUT</li></a>
+                    <a href="Ucourse.html"><li>COURSE</li></a>
+                    <a href="Ublob.html"><li>BLOG</li></a>
+                    <a href="Ucontact.html"><li>CONTACT</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="s1">
+            <div class="left">
+                <i class="fa-solid fa-lock"></i><span>Staff Login</span>
+                <i class="fa-solid fa-lock"></i></i><span>Student Login</span>
+            </div>
+            <div class="middle">
+                <marquee>
+                    <img src="D:\new downloads\project images\new.gif"><span>Examnination Notification</span> 
+                    <img src="D:\new downloads\project images\new.gif"><span>Get Ready To Explore The Genius In You With Genius 2023<span> 
+                    <img src="D:\new downloads\project images\new.gif"><span>Enrollment Form Notification 2022 23</span>
+                </marquee>
+                    
+            </div>
+            <div class="right">
+                <i class="fa fa-comment"></i><span>Admissions</span>
+            </div>
+        </div>
+        <div class="nav">
+            <nav class="nav-sha">
+                <h1>Contact</h1>
+            </nav>  
+        </div>
+    </section>
+	<!---------------------------------------------------Contact---------------------------------->
+	<div class="location">
+		<h1>Location</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247047.0846561399!2d77.3023045!3d14.6496571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb14a5558b7ff6d%3A0x25203867513f37ee!2sJNTUA%20COLLEGE%20OF%20ENGINEERING%20ANANTAPURAM!5e0!3m2!1sen!2sin!4v1691352123897!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<!---------------------------------------------------Details---------------------------------->
+	<div class="contact-us">
+		<div class="con-row">
+			<div class="con-column-left">
+				<h3>For General Enquiries :</h3>
+				<div class="con-column">
+					<i class="fa-solid fa-building-columns"></i>
+					<span>
+					    <h4>The University Ananthapur,</h4>
+					    <p>Andhra Pradesh.</p>
+					</span>
+				</div>
+				<div class="con-column">
+					<i class="fa-solid fa-house"></i>
+				    <span>
+				        <h4>Sir Mokshagundam Visvesvaraya Road</h4>
+				        <p>Ananthapur-515002,Andhra Pradesh, India</p>
+				    </span> 
+				</div>
+				<div class="con-column">
+				    <i class="fa-solid fa-phone"></i>
+				    <span>
+				        <h4>+1 0123456789</h4>
+				        <p>Monday to Saturday</p>
+				    </span> 
+			    </div>
+			    <div class="con-column">
+				    <i class="fa-solid fa-envelope-open-text"></i>
+				    <span>
+				        <h5>Info@Jntuananthapur.com</h5>
+				        <p>Email us your query.</p>
+				    </span> 
+			    </div>	
+			</div>
+			<div class="con-column-right">
+				<img src="http://www.jntua.ac.in/wp-content/uploads/2018/04/cropped-logo-1.png">
+				<h1>Jawaharlal Nehru Technological University Anathapur</h1>
+				<p>Andhra Pradesh,India</p>
+			</div>
+			
+
+		</div>
+	</div>
+    <!--------------------------------------------------contact---------------------------------->
+    <div class="contact">
+    	<div class="contact-h">
+    		<div class="contact-m">
+    			<h2>Contact Details of University Officials :</h2>
+    			<table>
+    				<tr><th>Designation<th>Phone/Fax<th>E-mail Id</th></tr>
+    				<tr><td>Vice-Chancellor<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Rector<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Registrar<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Academic and Planning<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Academic Audit<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director of Admissions<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director of Evaluation<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Research and Development<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Research and Development<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Industrial Relations and Placement<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Industrial Consultancy Services<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Foreign Affairs & Alumni Matters<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Faculty Development<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, IQAC<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Software Development Centre<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Director, Women Empowerment Cell<td>Off: 01234-456281<br>Fax: 01234-982742<td>info@jntuananthapur.com</td></tr>
+    			</table>
+    		</div>
+    		<div class="contact-m">
+    			<h2>Examination Branch :</h2>
+    			<table>
+    				<tr><th>Designation<th>Phone/Fax<th>E-mailId</th></tr>
+    				<tr><td>Controller of Examination<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Additional Controller of Examinations-1<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Additional Controller of Examinations-1<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Examination Helpline Center<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    			</table>
+    		</div>
+
+    		<div class="contact-m">
+    			<h2>Co-Ordinators :</h2>
+    			<table>
+    				<tr><th>Designation<th>Phone/Fax<th>E-mailId</th></tr>
+    				<tr><td>MSIT Coordinator<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>NSS Co-ordinator<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Co-ordinator, SC & ST Cell<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    			</table>
+    		</div>
+
+    		<div class="contact-m">
+    			<h2>Peshi :</h2>
+    			<table>
+    				<tr><th>Designation<th>Phone/Fax<th>E-mailId</th></tr>
+    				<tr><td>PA to Vice-Chancellor<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>PA to Rector<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>PA to Registrar<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    			</table>
+    		</div>
+
+    		<div class="contact-m">
+    			<h2>Administrative Office Staff :</h2>
+    			<table>
+    				<tr><th>Designation<th>Phone/Fax<th>E-mailId</th></tr>
+    				<tr><td>Finance Officer<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Deputy Registrar (Acounts)<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Deputy Registrer (Esyy.)<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Assistant Registrer (DAP Office)<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Assistance Registrer (DE Office)<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    				<tr><td>Superindent (DAA Office)<td>Off: 01234-456281<td>info@jntuananthapur.com</td></tr>
+    			</table>
+    		</div>
+    	</div>
+    </div>	
+
+	<!---------------------------------------------------footer---------------------------------->
+	<div class="footer">
+		<h3>About Us</h3>
+		<p>A College and experinced staff allow them to test their abilities until they realise what they're best in.Promotes Confidence and Personal Growth. A college Provides Students with the Opportunities to acquire an educations that helps shape up their morals and thinking,and boosts their personal growth and confidence.</p>
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+		<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><i class="fa-brands fa-twitter"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+	</div>
+	<div>
+	</div> 
+
+	<!---------------------------------------------------footer 2---------------------------------->
+    <div class="footer2">
+        <div class="footer2-h">
+            <div>
+                <h2>Download</h2>
+               <div class="footer2-left1">
+                    <span>Procedure for Organizing Graduation day</span><br>
+                    <span>Guidelines for Donation</span><br>
+                    <span>Research & Development</span><br>
+                    <span>Annual Reports</span><br>
+                    <span>Affiliated Colleges</span><br>
+                    <span>Syllabus</span><br>
+                    <span>Examination Branch Application Forms</span><br>
+                    <span>News Letters</span><br>
+               </div>
+            </div>
+            <div>
+                <h2>Postal Contacts</h2>
+               <div class="footer2-left1">
+                    <span>The Register,</span><br>
+                    <span>JNTU University Ananthapur,</span><br>
+                    <span>Ananthapuram-515002</span><br>
+                    <span>Andhra Pradesh,Inndia</span><br>
+               </div>
+            </div>
+            <div>
+                <h2>Information Links</h2>
+               <div class="footer2-left1">
+                    <span>Placements</span><br>
+                    <span>Online Training</span><br>
+                    <span>Results</span><br>
+                    <span>Registered Ph D Scholers</span><br>
+                    <span>Anti Ragging</span><br>
+                    <span>List Of Suggested Books Indian Authors</span><br>
+                    <span>NSS Cell</span><br>
+                    <span>Events</span><br>
+               </div>
+            </div>
+            <div>
+                <h2>Get In Touch</h2>
+               <div class="footer2-left1">
+                   <i class="fa-solid fa-envelope"></i><span>Email:info@jntuananthapur.com</span><br>
+                   <i class="fa-brands fa-square-whatsapp"></i><span>Whatsap No:+91-123456789</span><br>
+                   <i class="fa-solid fa-address-book"></i><span>Contact No:+91-(123)-4567890</i></span><br>
+                   <i class="fa-solid fa-globe"></i><span>Website:Http://www.jntu.com</span><br>
+                   <a href="https://www.facebook.com/"><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=80&h=80&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><img src="https://th.bing.com/th?id=OSK.HNYBZh1b8THsU04fx-fRn4aQAqKMN2-KE_KCboGdg96d15U&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://in.linkedin.com"><img src="https://th.bing.com/th?id=OSK.HNYB5Zkp2MDvwR2nXmYMT4cVoTssZhyvU6zyn7sQOaGoGHc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://www.instagram.com/"><img src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+               </div>
+            </div>
+            
+        </div>
+        <h3>Copyright @ 2023,Jntuananthour.com.All Rights are Reserved</h3>
+            
+            
+    </div>>     
+  </body>
+</html>
+

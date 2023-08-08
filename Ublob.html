@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+    <script src="https://kit.fontawesome.com/11d61c8f58.js" crossorigin="anonymous"></script>
+    <style>
+        *{  padding:0px;  margin:0px;   }       
+    .header{width:100%;height:81vh;margin-bottom:100px;}
+    .nav1{display: flex; background:#ee0e02;height:70px;justify-content:space-between;}
+    .nav1-h{display:flex;margin-inline-start: 50px;}
+    .nav1-h img{    width:77px; } 
+    .nav1-h h1{margin-block-start:20px;font-size:30px;}          
+    .nav1 .nav-links{   width:500px;    }                  
+    .nav-links ul li{display:inline-block;  padding:15px;font-size:14px;position:relative;cursor:pointer;margin-block-start:13px;color:white;transition:0.5s;}
+    .nav-links ul li:active{color:#0000ff;}
+    .nav-links li::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;  background:#330000;  }
+    .nav-links li:hover::after{ width:100%; }
+    .s1{display:flex; background:black; color:white;}
+    .left{display:flex; margin:14px;margin-inline-start:50px;width:310px;}
+    .left span{margin-inline:10px 30px;list-style: none;}
+    .left i{color:#ee0e02;}
+    .middle marquee{text-align: center;margin-block-start:15px;justify-content: space-around;}
+    .middle span{margin-inline:5px 25px;}
+    .right{display:flex;width:280px;margin-block-start:14px; }
+    .right i{padding-inline:50px 10px;color:#ee0e02;}
+    .nav{width:100%;height:70vh;position:relative;}
+    .nav{position:relative;background: url(https://cdn.wallpapersafari.com/32/32/HbsIBw.jpg);background-attachment:fixed;background-position:center;background-size:cover;postion:relative; width:100%;height:70vh;}
+    .nav-sha{ background:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4));width:100%;height:100%;}
+    .nav h1{top:230px;left:30%;position: absolute;color:white;font-size: 30px;border-bottom: 2px solid red;display: inline-block;}
+    .nav h1 span{color:orange;}
+
+    .blob{display:flex;margin:auto;width:95%; padding-block:10px;margin-top: 50px;border-top: 5px solid red;}
+    .b-left{ width:60%;text-align:justify;}
+    .b-left img{width:100%;}
+    .b-left h3{text-align:center; color:red;}
+    .b-left p{color:#666;}
+    .b-right{width:40%;height:50vh;}
+    .b-right .b-categories{width:80%;margin:auto;justify-content: space-between;display:flex;padding-block:15px;}
+    .b-right h2{background-color:red; color:white;padding-block: 10px;width:80%;margin:auto;text-align: center;}
+
+    .application{width:80%;height:450px;padding:10px 20px;margin-block: 80px;margin-inline: 50px;}
+    .application h2{background: none;color:black;}
+    .application input,select{width:100%;padding:10px 10px; margin-block: 15px;background-color: #f0f0f0;font-size: 15px;box-sizing: border-box;border:none; outline:none;}
+    .application button{padding:10px 10px;border-radius: 5px;border:none;margin:20px 40%;background-color:red;color:white;cursor:pointer;transition: 0.1s;}
+    .application button:active{background-color:black;}
+
+    .comment{width:90%;border:1px solid black;margin:50px 0px;height:400px;padding:10px 20px;}
+    .comment input,textarea{width:100%;padding:10px 10px; margin-block: 15px;background-color: #f0f0f0;font-size: 15px;box-sizing: border-box;border:none; outline:none;}
+    .comment button{padding:10px 10px;border-radius: 5px;border:none;margin:20px 40%;background-color:red;color:white;cursor:pointer;transition: 0.1s;}
+    .comment button:active{background-color:black;}
+    
+    .footer{ text-align:center;width:85%;margin:auto;  }
+    .footer h3{border-bottom:3px solid red; display:inline-block;}
+    .footer p{margin-block:30px;color:#666; }
+    .footer i{color:red; margin:10px;padding-bottom: 50px;}
+
+    .footer2{background-color:black;width:100%; height:55vh;background-attachment:fixed;background-position:center; background-size:cover;postion:relative;color:white;}
+    .footer2-h{display:grid;grid-template-columns: auto auto auto auto;justify-content: space-around;margin-block-end:30px;}
+    .footer2-h h2{margin-block:30px 15px;color:red;}
+    .footer2-left1{font-size: 15px;line-height:30px;}
+    .footer2-left1 span{cursor:pointer;}
+    .footer2-left1 span:hover{color:#ff00ff;}
+    .footer2-left1 i{color:#ff5959;padding-inline-end:15px;}
+    .footer2-left1 img{border-radius: 50%;height:20px;padding-inline:5px;margin-block-start: 20px;}
+    .footer2 h3{text-align: center;border-top: 1px solid white;padding-block-start:20px;display: block;}
+    </style>
+
+</head>
+<body>
+    <!---------------------------------------------------Home---------------------------------->
+    <section class="header">
+        <div class= "nav1">
+            <div class="nav1-h">
+                <img src="D:\new downloads\project images\University-PNG-HD-Image.png">
+                <h1>JNTU ANATHAPUR UNIVERSITY</h1>
+            </div>
+        
+            <div class = " nav-links">
+               <ul>
+                    <a href="Uindex.html"><li>HOME</li></a>
+                    <a href="Uabout.html"><li>ABOUT</li></a>
+                    <a href="Ucourse.html"><li>COURSE</li></a>
+                    <a href="Ublob.html"><li>BLOG</li></a>
+                    <a href="Ucontact.html"><li>CONTACT</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="s1">
+            <div class="left">
+                <i class="fa-solid fa-lock"></i><span>Staff Login</span>
+                <i class="fa-solid fa-lock"></i></i><span>Student Login</span>
+            </div>
+            <div class="middle">
+                <marquee>
+                    <img src="D:\new downloads\project images\new.gif"><span>Examnination Notification</span> 
+                    <img src="D:\new downloads\project images\new.gif"><span>Get Ready To Explore The Genius In You With Genius 2023<span> 
+                    <img src="D:\new downloads\project images\new.gif"><span>Enrollment Form Notification 2022 23</span>
+                </marquee>
+                    
+            </div>
+            <div class="right">
+                <i class="fa fa-comment"></i><span>Admissions</span>
+            </div>
+        </div>
+        <div class="nav">
+            <nav class="nav-sha">
+                <h1>Our Certificates <span>& Online</span> Programs for 2024</h1>
+            </nav>  
+        </div>
+    </section>
+    <!---------------------------------------------------blob---------------------------------->
+    <div class="blob">
+        <div class="b-left">
+            <img src="D:\new downloads\project images\certificate.jpg"><br><br><br>
+            <p>Santhiram Engineering College is situated in Kurnool in Andhra Pradesh state of India. The college is accredited by AICTE. Santhiram Engineering College offers 8 courses across 3 streams namely Engineering, Management, IT..Popular degrees offered at Santhiram Engineering College include B.Tech, post graduation, degree, .Besides a robust teaching pedagogy, Santhiram Engineering College is also a leader in research and innovation.Focus is given to activities beyond academics at Santhiram Engineering College, which is evident from its infrastructure, extracurricular activities and national & international collaborations. The placement at Santhiram Engineering College is varied, with recruitment options both in corporates and public sector as well as entrepreneurship.</p><br>
+            <p>Campus placements are a common occurance at some of the biggest B-school and engineering in india.They provide an opportuninty for students to start their careers in professional world,immediatly after they have completed their education.Campus placements in india,which are usually held during the final year of graduation for most students,also enable them interact with the company's representatives & industry professionals during the placement drive which help them lay the foundation of their future careers even they network with potential contacts in their field</p><br>
+            <h3>Skill Training & More Intenship Opportunities</h3><br>
+            <p>The way to give students exposure and some skills is through the means of internships.More and more companies are on the hunt for young talent and with campus placements for internships,both students and companies can have the opportunities to work together for a specific time period and aid mutual growth for both the candidates as well as the organisation they're working as an intern.</p><br>
+            <h3>More Companies In Campus Placements</h3><br>
+            <p>Given the number of students that apply for top campus placements in india at college level,the colleges usually create very few opportunities for its students to get employed,while lack of skils makes up for just one reason,another important problem is the lack of appropriate number of companies that come for placements. More companies need to be invited for campus placements in india.Having more companies would ensure that students from diverse backgrounds are getting enough opportunities to understand the selection process and to also get selected.</p>
+            <!--------------------------------------------------comment box---------------------------------->
+            <div class="comment">
+                <h2>Leave a Comment</h2>
+                <form action="https://formspree.io/f/mvojgbwa" method="POST">
+                    <input type="text" placeholder="Name"name="username" required><br>
+                    <input type="number" placeholder="Number"name="Number" required><br>
+                    <input type="email" placeholder="Email"name="emailid" required><br>
+                    <textarea row="8" placeholder="Your Comment"id="texta" name="textarea" required></textarea><br>
+                    <button type="submit">Post Comment</button>
+                </form> 
+            </div>
+        </div>
+        <div class="b-right">
+            <h2>Post Categories</h2>
+            <div class="b-categories">
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div class="b-categories">
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div class="b-categories">
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div class="b-categories">
+                <span>Computor Science</span>
+                <span>34</span>
+            </div>
+            <div class="b-categories">
+                <span>Auto CAD</span>
+                <span>42</span>
+            </div>
+            <div class="b-categories">
+                <span>Journalism</span>
+                <span>25</span>
+            </div>
+            <div class="b-categories">
+                <span>Commerce</span>
+                <span>20</span>
+            </div>
+
+            <div class="application">
+                <h2><u>Application</u></h2>
+                <form action="https://formspree.io/f/mvojgbwa" method="POST">
+                    <input type="text" placeholder="FullName"name="FirstName" required><br>
+                     <input type="number" placeholder="Mobile"name="Number" required><br>
+                    <input type="email" placeholder="Email"name="emailid" required><br>
+                    <input type="text" placeholder="Stream"name="Stream" required><br>
+                    <select>select<option>Online<option>Ofline</option></select><br>
+                    <button type="submit">Submit</button>
+                </form> 
+            </div>
+        </div>
+        
+
+    </div>
+    <!---------------------------------------------------footer---------------------------------->
+    <div class="footer">
+        <h3>About Us</h3>
+        <p>A College and experinced staff allow them to test their abilities until they realise what they're best in.Promotes Confidence and Personal Growth. A college Provides Students with the Opportunities to acquire an educations that helps shape up their morals and thinking,and boosts their personal growth and confidence.</p>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!---------------------------------------------------footer 2---------------------------------->
+    <div class="footer2">
+        <div class="footer2-h">
+            <div>
+                <h2>Download</h2>
+               <div class="footer2-left1">
+                    <span>Procedure for Organizing Graduation day</span><br>
+                    <span>Guidelines for Donation</span><br>
+                    <span>Research & Development</span><br>
+                    <span>Annual Reports</span><br>
+                    <span>Affiliated Colleges</span><br>
+                    <span>Syllabus</span><br>
+                    <span>Examination Branch Application Forms</span><br>
+                    <span>News Letters</span><br>
+               </div>
+            </div>
+            <div>
+                <h2>Postal Contacts</h2>
+               <div class="footer2-left1">
+                    <span>The Register,</span><br>
+                    <span>JNTU University Ananthapur,</span><br>
+                    <span>Ananthapuram-515002</span><br>
+                    <span>Andhra Pradesh,Inndia</span><br>
+               </div>
+            </div>
+            <div>
+                <h2>Information Links</h2>
+               <div class="footer2-left1">
+                    <span>Placements</span><br>
+                    <span>Online Training</span><br>
+                    <span>Results</span><br>
+                    <span>Registered Ph D Scholers</span><br>
+                    <span>Anti Ragging</span><br>
+                    <span>List Of Suggested Books Indian Authors</span><br>
+                    <span>NSS Cell</span><br>
+                    <span>Events</span><br>
+               </div>
+            </div>
+            <div>
+                <h2>Get In Touch</h2>
+               <div class="footer2-left1">
+                   <i class="fa-solid fa-envelope"></i><span>Email:info@jntuananthapur.com</span><br>
+                   <i class="fa-brands fa-square-whatsapp"></i><span>Whatsap No:+91-123456789</span><br>
+                   <i class="fa-solid fa-address-book"></i><span>Contact No:+91-(123)-4567890</i></span><br>
+                   <i class="fa-solid fa-globe"></i><span>Website:Http://www.jntu.com</span><br>
+                   <a href="https://www.facebook.com/"><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=80&h=80&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><img src="https://th.bing.com/th?id=OSK.HNYBZh1b8THsU04fx-fRn4aQAqKMN2-KE_KCboGdg96d15U&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://in.linkedin.com"><img src="https://th.bing.com/th?id=OSK.HNYB5Zkp2MDvwR2nXmYMT4cVoTssZhyvU6zyn7sQOaGoGHc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://www.instagram.com/"><img src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+               </div>
+            </div>
+            
+        </div>
+        <h3>Copyright @ 2023,Jntuananthour.com.All Rights are Reserved</h3>
+            
+            
+    </div>
+  </body>
+</html>
+

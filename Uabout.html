@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+	<script src="https://kit.fontawesome.com/11d61c8f58.js" crossorigin="anonymous"></script>
+	<style>
+		*{	padding:0px;  margin:0px;	}		
+	.header{width:100%;height:81vh;}
+	.nav1{display: flex; background:#ee0e02;height:70px;justify-content:space-between;}
+	.nav1-h{display:flex;margin-inline-start: 50px;}
+	.nav1-h img{	width:77px;	} 
+	.nav1-h h1{margin-block-start:20px;font-size:30px;}          
+	.nav1 .nav-links{	width:500px;	}	               
+	.nav-links ul li{display:inline-block;	padding:15px;font-size:14px;position:relative;cursor:pointer;margin-block-start:13px;color:white;transition:0.5s;}
+	.nav-links ul li:active{color:#0000ff;}
+	.nav-links li::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;	background:#330000;  }
+	.nav-links li:hover::after{	width:100%;	}
+	.s1{display:flex; background:black; color:white;}
+	.left{display:flex; margin:14px;margin-inline-start:50px;width:310px;}
+	.left span{margin-inline:10px 30px;list-style: none;}
+	.left i{color:#ee0e02;}
+	.middle marquee{text-align: center;margin-block-start:15px;justify-content: space-around;}
+	.middle span{margin-inline:5px 25px;}
+	.right{display:flex;width:280px;margin-block-start:14px; }
+	.right i{padding-inline:50px 10px;color:#ee0e02;}
+    .nav{width:100%;height:65vh;}
+    .nav img{width:100%;height:65vh;}
+
+
+    .about{ height:285vh;}
+    .about #h1{padding-top:30px;color:red;display: inline-block;margin-left:650px;}
+    .ab-img{width:85%;margin:auto;display:flex;height:85vh;justify-content: }
+    .ab-img h1{color:red;text-align: center;margin-top: 25%;font-size: 43px;display: inline-block;height:50px;}
+    .ab-img img{width:70%;}
+    .about-h{width:85%;margin:auto;}
+    .about-m h1{color:#ff00ff;border-bottom:2px solid #ff00ff;text-align:left; padding-top:10px;display: inline-block;}
+    .about-m p{padding-block:15px;color:#666;line-height:27px;word-spacing: 5px;text-align:justify;}
+    .about-m img{width:90%;padding-left:65px; }
+
+    .chair{height:66vh;margin-block:30px 20px;}
+    .chair-h{width:85%;margin:auto;}
+    .chair-h h1{color:#ff00ff;border-bottom:2px solid #ff00ff;display: inline-block;}
+    .chair-m{background:#ffc1e0; width:800px; height:470px;margin-left:200px;text-align:justify; }
+    .chair-m img{width:150px;height:170px;padding-top:30px;padding-left:40%;}
+    .chair-m h3{text-align: center;color:red;margin-bottom:15px;}
+    .chair-m p{padding-inline:30px;color:#666;line-height:27px;}
+
+    .others{height:150vh; margin-block-start: 50px;}
+    .others-h{width:85%;margin:auto;}
+    .others h1{margin-left:100px;color:#ff00ff;border-bottom:2px solid #ff00ff;display: inline-block;margin-top: 50px;}
+    .others-1{display:flex;margin-block:30px 60px;}
+    .others-1 img{width:50%; }
+    .others-1 p{color:#666;line-height:30px;padding-top:80px;text-align: justify;padding-right:20px; word-spacing: 5px;}
+    .others-2{display:flex;margin-block-end: 60px;}
+    .others-2 img{width:50%;}
+    .others-2 p{color:#666;line-height:30px;padding-top:50px;text-align: justify;padding-left:20px;word-spacing: 5px; }
+
+    .notes{height:40vh;margin-block:50px 20px;background:#ffeaff;}
+    .notes-h{width:85%;margin:auto;display: flex;}
+    .notes-m{width:50%;margin-top: 40px;}
+    .notes-m h2{color:#ff00ff;border-bottom: 2px solid #ff00ff;display: inline-block;margin-bottom: 20px;}
+    .notes-m li{padding-left: 20px; padding-bottom:20px;}
+
+    .footer{ text-align:center;width:85%;margin:auto;  }
+	.footer h3{border-bottom:3px solid red; display:inline-block;}
+	.footer p{margin-block:30px;color:#666; }
+	.footer i{color:red; margin:10px;padding-bottom: 50px;}
+
+
+    .footer2{background-color:black;width:100%;	height:55vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;color:white;}
+	.footer2-h{display:grid;grid-template-columns: auto auto auto auto;justify-content: space-around;margin-block-end:30px;}
+	.footer2-h h2{margin-block:30px 15px;color:red;}
+	.footer2-left1{font-size: 15px;line-height:30px;}
+	.footer2-left1 span{cursor:pointer;}
+	.footer2-left1 span:hover{color:#ff00ff;}
+	.footer2-left1 i{color:#ff5959;padding-inline-end:15px;}
+	.footer2-left1 img{border-radius: 50%;height:20px;padding-inline:5px;margin-block-start: 20px;}
+	.footer2 h3{text-align: center;border-top: 1px solid white;padding-block-start:20px;display: block;}
+	</style>
+
+</head>
+<body>
+	<!---------------------------------------------------Home---------------------------------->
+	<section class="header">
+		<div class= "nav1">
+			<div class="nav1-h">
+				<img src="D:\new downloads\project images\University-PNG-HD-Image.png">
+				<h1>JNTU ANATHAPUR UNIVERSITY</h1>
+			</div>
+		
+			<div class = " nav-links">
+			   <ul>
+				    <a href="Uindex.html"><li>HOME</li></a>
+					<a href="Uabout.html"><li>ABOUT</li></a>
+					<a href="Ucourse.html"><li>COURSE</li></a>
+					<a href="Ublob.html"><li>BLOG</li></a>
+					<a href="Ucontact.html"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="s1">
+			<div class="left">
+				<i class="fa-solid fa-lock"></i><span>Staff Login</span>
+				<i class="fa-solid fa-lock"></i></i><span>Student Login</span>
+			</div>
+			<div class="middle">
+				<marquee>
+					<img src="D:\new downloads\project images\new.gif"><span>Examnination Notification</span> 
+					<img src="D:\new downloads\project images\new.gif"><span>Get Ready To Explore The Genius In You With Genius 2023<span> 
+					<img src="D:\new downloads\project images\new.gif"><span>Enrollment Form Notification 2022 23</span>
+				</marquee>
+					
+			</div>
+			<div class="right">
+				<i class="fa fa-comment"></i><span>Admissions</span>
+			</div>
+		</div>
+		<div class="nav">
+			<img src="https://www.targetadmission.com/img/colleges/newc/51181-653323.jpg  ">
+		</div>
+	</section>
+	<!---------------------------------------------------About---------------------------------->
+	<div class="about">
+		<h1 id="h1"><u>About Us</u></h1>
+		<div class="ab-img">
+			<h1><u>Jawaharlal Nehru Technological University Ananthapur</u></h1>
+			<img src="https://i0.wp.com/acharyaedu.com/wp-content/uploads/2019/12/Ammavaru_Trans.png?w=824&ssl=1">
+		</div>
+		<div class="about-h">
+			<div class="about-m">
+				<h1>The University</h1>
+				<p>At the time when there was only one Government Engineering College at Guindy Madras for the entire former composite Madras province, three new Government Engineering Colleges were sanctioned under post second world war reconstruction programme, one at Coimbatore (1945), one at Kakinada(1946) and one at Anantapur(1946). The college of Engineering Anantapur was temporarily located at Guindy in 1946 and later shifted to Anantapur in 1948. The first batch of 60 students was admitted into the college at Guindy, Madras on 10th June 1946 and so the college started its historic journey on that day. Major B.H. Marley was appointed as the first full-fledged Principal of the college after shifting the college to Anantapur. The college was located in Military Meat & Dehydration factory in the present old campus. All those Engineers who went through that kerosene era who studied in the light of hurricane lamps rose to very high positions in their professional career all across the globe.</p>
+				<p>The college was formally inaugurated at Anantapur by the then Honorable Chief Minister O.Ramaswamy Reddiar. Later, about 300 acres of land was acquired to establish a new campus. The College Main Building, three Laboratories, one Workshop Block and Power House were constructed in 1958 at a total cost of Rs.18 Lakhs. The college was initially affiliated to Madras University during 1946-1955 and to Sri Venkateswara University, Tirupathi during 1955-1972.</p>
+				<P>In the year 1972, under a broad policy of framework of providing technological education required for the industrial growth of the country in general and more particularly for the state of Andhra Pradesh, Jawaharlal Nehru Technological University (JNTU) was established on 2nd October 1972 by an act of State Legislature; rightly named after the ardent lover of Science and Technology, Pandit Jawaharlal Nehru, the first Prime Minister of India. Government Engineering College Anantapur, Government Engineering College Kakinada and Government Engineering College Nagarjunasagar (later it was shifted to Hyderabad) were made as its constituent units. JNT University started functioning from Hyderabad. Thus, the College of Engineering, Anantapur went into the fold of JNTU and the college was renamed as JNTU College of Engineering Anantapur. Subsequently, JNTU Act 1972 was amended by JNTU Ordinance, 1992 to affiliate any other college or institution notified by State Government of Andhra Pradesh. Eventually JNTU, Hyderabad has become a multi campus university.</P>
+				<img src="https://jntuasms.ac.in/wp-content/uploads/2020/11/campu-Image.png">
+				<p>Later in the year 2008, JNTU, Hyderabad was divided into four independent universities. The Jawaharlal Nehru Technological University Anantapur (JNTUA) was established on 18th August 2008 by an Act of the Legislature of the State of Andhra Pradesh. JNTUA started functioning in the premises of JNTU College of Engineering, Anantapur (Formerly College of Engineering Anantapur). JNTU College of Engineering, Anantapur became a constituent college of JNTUA and was renamed as JNTUA College of Engineering, Anantapur. The JNTUA College of Engineering, Pulivendula, established in the year 2006 and Oil Technology Research Institute (OTRI), Anantapur, established in the year 1948 also became constituent units of JNTUA. A new constituent college – JNTUA College of Engineering, Kalikiri established in 2013 also came under the fold of JNTUA. The OTRI was later renamed as Oil Technology and Pharmaceutical Research Institute (OTPRI), in the year 2016. In addition to the above four constituent colleges, the JNTUA has 98 Engineering Colleges, 33 Pharmacy Colleges and 29 stand-alone MBA/MCA colleges affiliated to it.</p>
+				<p>Since its inception, JNTUA is committed to develop and nurture technological education and intends to produce technical manpower of high quality, comparable to the best in the world.</p>
+			</div>
+		</div>
+	</div>
+	<div class="chair">
+		<div class="chair-h">
+			<h1>Chancellor :</h1>
+			<div class="chair-m">
+				<img src="https://www.jntua.ac.in/wp-content/uploads/2023/03/sabdulnazeer.jpg">
+    		    <h3>Shri S Abdul Nazeer<br>Hon’ble Governor of Andhra Pradesh</h3>
+    		    <p>S. Abdul Nazeer (born 5 January 1958) is a former judge of the Supreme Court of India, who is serving as the 24th Governor of Andhra Pradesh. He is also former judge of the Karnataka High Court. He was appointed as the Governor of Andhra Pradesh on 12 February 2023.
+    		    Abdul Nazeer was born into a Muslim family belonging to the Dakshina Kannada district of Karnataka, that is coastal Karnataka. He is the son of Fakir Saheb and he has five siblings. He grew up in Beluvai/Moodbidri and completed his B.Com degree at Mahaveera College, Moodbidri. He later obtained a law degree from SDM Law College, Mangalore.(formerly known as "Sri Dharmasthala Manjunatheshwara Law College").</p>
+			</div>
+		</div>
+	</div>
+	<div class="others">
+		<h1>The School of Management Studies :</h1>
+		<div class="others-h">	
+			<div class="others-1">	
+				<p>The Journey of School of Management Studies (Erstwhile Department of Management ) began in 2009. Since its inception the school has a long way providing highly conducive academic environment and interaction with hard working, industry oriented professors and making competitive management professionals. The School offers two-year full time MBA programme with dual specialization & unique MBA Programme in Financial technology.</p>
+				<img src="https://jntuasms.ac.in/wp-content/uploads/2020/11/image01.jpg">
+			</div>
+			<div class="others-2">
+			    <img src="https://jntuasms.ac.in/wp-content/uploads/2020/11/image03.jpg">	
+				<p>The Journey of School of Management Studies (Erstwhile Department of Management ) began in 2009. Since its inception the school has a long way providing highly conducive academic environment and interaction with hard working, industry oriented professors and making competitive management professionals. The School offers two-year full time MBA programme with dual specialization & unique MBA Programme in Financial technology.</p>
+				
+			</div>
+			<div class="others-1">	
+				<p>The Journey of School of Management Studies (Erstwhile Department of Management ) began in 2009. Since its inception the school has a long way providing highly conducive academic environment and interaction with hard working, industry oriented professors and making competitive management professionals. The School offers two-year full time MBA programme with dual specialization & unique MBA Programme in Financial technology.</p>
+				<img src="https://jntuasms.ac.in/wp-content/uploads/2020/11/image01.jpg">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="notes">
+		<div class="notes-h">
+			<div class="notes-m">
+				<h2>OTHER CREDENTIALS :</h2>
+				<ul>
+					<li>Affiliated to All India Council for Technical Education (AICTE), New Delhi.</li>
+					<li>Life Member of All India Management Association (AIMA).</li>
+					<li>Life Member of All India Management Association (AIMA).</li>
+					<li>EBSCO Business Elite _ Online Management Journals Member.</li>
+				</ul>
+			</div>
+			<div class="notes-m">
+				<h2>OUR BELIEFS :</h2>
+				<ul>
+					<li>The ENVIRONMENT is important for Transformation in attitudes of Students.</li>
+					<li>Positive Attitude builds a perfect LEADER.</li>
+					<li>Good Leaders can MOTIVATE People and enhance the culture of Organizations, And hence GROWTH OF THE NATION.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!---------------------------------------------------footer---------------------------------->
+	<div class="footer">
+		<h3>About Us</h3>
+		<p>A College and experinced staff allow them to test their abilities until they realise what they're best in.Promotes Confidence and Personal Growth. A college Provides Students with the Opportunities to acquire an educations that helps shape up their morals and thinking,and boosts their personal growth and confidence.</p>
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+		<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><i class="fa-brands fa-twitter"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+	</div>
+	<!---------------------------------------------------footer 2---------------------------------->
+	<div class="footer2">
+		<div class="footer2-h">
+			<div>
+				<h2>Download</h2>
+			   <div class="footer2-left1">
+			   	    <span>Procedure for Organizing Graduation day</span><br>
+			     	<span>Guidelines for Donation</span><br>
+			    	<span>Research & Development</span><br>
+			    	<span>Annual Reports</span><br>
+			    	<span>Affiliated Colleges</span><br>
+			    	<span>Syllabus</span><br>
+			    	<span>Examination Branch Application Forms</span><br>
+			    	<span>News Letters</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Postal Contacts</h2>
+			   <div class="footer2-left1">
+			   	    <span>The Register,</span><br>
+			    	<span>JNTU University Ananthapur,</span><br>
+			    	<span>Ananthapuram-515002</span><br>
+			    	<span>Andhra Pradesh,Inndia</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Information Links</h2>
+			   <div class="footer2-left1">
+			    	<span>Placements</span><br>
+			    	<span>Online Training</span><br>
+			    	<span>Results</span><br>
+			    	<span>Registered Ph D Scholers</span><br>
+			    	<span>Anti Ragging</span><br>
+			    	<span>List Of Suggested Books Indian Authors</span><br>
+			    	<span>NSS Cell</span><br>
+			    	<span>Events</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Get In Touch</h2>
+			   <div class="footer2-left1">
+			   	   <i class="fa-solid fa-envelope"></i><span>Email:info@jntuananthapur.com</span><br>
+                   <i class="fa-brands fa-square-whatsapp"></i><span>Whatsap No:+91-123456789</span><br>
+                   <i class="fa-solid fa-address-book"></i><span>Contact No:+91-(123)-4567890</i></span><br>
+                   <i class="fa-solid fa-globe"></i><span>Website:Http://www.jntu.com</span><br>
+                   <a href="https://www.facebook.com/"><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=80&h=80&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><img src="https://th.bing.com/th?id=OSK.HNYBZh1b8THsU04fx-fRn4aQAqKMN2-KE_KCboGdg96d15U&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://in.linkedin.com"><img src="https://th.bing.com/th?id=OSK.HNYB5Zkp2MDvwR2nXmYMT4cVoTssZhyvU6zyn7sQOaGoGHc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://www.instagram.com/"><img src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+			   </div>
+			</div>
+			
+		</div>
+		<h3>Copyright @ 2023,Jntuananthour.com.All Rights are Reserved</h3>
+			
+			
+	</div>
+
+
+	  
+  </body>
+</html>
+

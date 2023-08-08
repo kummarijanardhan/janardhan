@@ -1,0 +1,430 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+	<script src="https://kit.fontawesome.com/11d61c8f58.js" crossorigin="anonymous"></script>
+	<style>
+	*{	padding:0px;  margin:0px;	}		
+	.header{width:100%;height:81vh;}
+	.nav1{display: flex; background:#ee0e02;height:70px;justify-content:space-between;}
+	.nav1-h{display:flex;margin-inline-start: 50px;}
+	.nav1-h img{	width:77px;	} 
+	.nav1-h h1{margin-block-start:20px;font-size:30px;}          
+	.nav1 .nav-links{	width:500px;	}	               
+	.nav-links ul li{display:inline-block;	padding:15px;font-size:14px;position:relative;cursor:pointer;margin-block-start:13px;color:white;transition:0.5s;}
+	.nav-links ul li:active{color:#0000ff;}
+	.nav-links li::after{content:'';width:0%;display:block;margin:auto;height:2px;transition:0.5s;	background:#330000;  }
+	.nav-links li:hover::after{	width:100%;	}
+	.s1{display:flex; background:black; color:white;}
+	.left{display:flex; margin:14px;margin-inline-start:50px;width:310px;}
+	.left span{margin-inline:10px 30px;list-style: none;}
+	.left i{color:#ee0e02;}
+	.middle marquee{text-align: center;margin-block-start:15px;justify-content: space-around;}
+	.middle span{margin-inline:5px 25px;}
+	.right{display:flex;width:280px;margin-block-start:14px; }
+	.right i{padding-inline:50px 10px;color:#ee0e02;}
+    .nav{width:100%;height:65vh;}
+    .nav img{width:100%;height:65vh;}
+
+    .header-p{width:100%;height:60vh;}
+    .header-p h1{color:red;border-bottom: 2px solid red;display: inline-block;margin-top: 30px;margin-left: 40%;}
+	.header-p1{display:flex;}
+	.left-p{width:40%;text-align: justify;margin-block-start:10px;}
+	.left-p h1{font-size:30px;color:red;margin-inline:50px;border-bottom:2px solid red;display: inline-block;}
+	.left-p p{color:#666;padding-block-start:20px;padding-inline:50px;line-height:27px;}
+	.right-p{display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px 30px;grid-gap:20px 20px;height:200px;margin-block-start: 120px;margin-inline: 100px;}
+	.right-p-1{width:175px;height:85px;text-align: center;background:orange;}
+	.right-p-1 i{padding-block-start: 12px;}
+	.right-p-2{width:175px;height:85px;text-align: center;background:#ffff00;}
+	.right-p-2 i{padding-block-start: 12px;}
+	.right-p-3{width:175px;height:85px;text-align: center;background:#ccffff;}
+	.right-p-3 i{padding-block-start: 12px;}
+	.right-p-4{width:175px;height:85px;text-align: center;background:#ffcc00;}
+	.right-p-4 i{padding-block-start: 12px;} 
+	.right-p-5{width:175px;height:85px;text-align: center;background:#ff7373;}
+	.right-p-5 i{padding-block-start: 12px;}
+    .right-p-6{width:175px;height:85px;text-align: center;background:#66ff00;}
+	.right-p-6 i{padding-block-start: 12px;}
+	.right-p-7{width:175px;height:85px;text-align: center;background:#99ff00;}
+	.right-p-7 i{padding-block-start: 12px;}
+	.right-p-8{width:175px;height:85px;text-align: center;background:#59acff;}
+	.right-p-8 i{padding-block-start: 12px;}
+
+	.course-list{height:355vh;}
+	.list-h{width:90%;margin:auto;}
+	.list-m{margin-inline:10%;}
+	.list-m h1{margin-bottom: 20px;font-size: 28px;color:red;border-bottom: 2px solid red;display: inline-block;margin-left:420px;}
+	.list-m table{width:103%;border-top: 5px solid red;padding-top:10px; }
+	.list-m th{height:45px;background:#ffa64d;font-size: 17px;}
+	.list-m td{height:30px;padding-left:10px;}
+	.list-m tr:nth-child(even){background:#91ffff;}
+	.list-m tr:nth-child(odd){background:#ffff9b;}
+	.list-m td:hover{background:red;color:white; }
+
+	.colleges{width:100%;height:70vh;margin:auto;margin-block:20px;}
+	.colleges h2{margin-top:30px;color:red;display:inline-block;border-bottom:2px solid red;margin-left:400px; }
+	.col-row{width:95%;display: flex;height:80%;margin-top: 20px;justify-content: space-around;margin: auto;}
+	.col-column {width:50%; margin-top:30px;}
+	.col-column table{width:95%;height:100%;}
+	.col-column th{height:30px;background:#ffa64d;font-size: 20px;text-align: center;}
+	.col-column td{height:25px;padding-left: 20px;}
+	.col-column tr:nth-child(even){background:#91ffff;}
+	.col-column tr:nth-child(odd){background:#ffff9b;}
+	.col-column td:hover{background:red;color:white; }
+	
+	.register{width:95%;margin:auto;height:20vh;margin-block-end:40px; }
+	.register h2{padding-block: 15px 20px; color:#ff6600;`;font-size:25px;text-align: center;}
+	.r-row{margin-block: 20px;}
+	.r-row input{margin-inline: 20px;height:20px;padding:10px 5px;border-radius:5px;border:none;background-color: #f0f0f0;outline-color:red;}
+	.r-row #se1{padding-block:11.5px;padding-inline:5px 80px;border-radius: 5px;border:none;outline-color:red;background-color: #f0f0f0;margin-inline: 20px; color:#666;}
+	.r-row #se2{padding-block:11.5px;padding-inline:5px 22px;border-radius: 5px;border:none;outline-color:red;background-color: #f0f0f0;margin-inline: 20px;color:#666;}
+	.r-row button{padding:11px 14px;border-radius: 5px;border:none;background-color:red;color:white;cursor:pointer;transition: 0.1s;margin-inline-start: 20px;}
+    .r-row button:active{background-color:black;}
+	
+
+	.footer2{background-color:black;width:100%;	height:55vh;background-attachment:fixed;background-position:center;	background-size:cover;postion:relative;color:white;}
+	.footer2-h{display:grid;grid-template-columns: auto auto auto auto;justify-content: space-around;margin-block-end:30px;}
+	.footer2-h h2{margin-block:30px 15px;color:red;}
+	.footer2-left1{font-size: 15px;line-height:30px;}
+	.footer2-left1 span{cursor:pointer;}
+	.footer2-left1 span:hover{color:#ff00ff;}
+	.footer2-left1 i{color:#ff5959;padding-inline-end:15px;}
+	.footer2-left1 img{border-radius: 50%;height:20px;padding-inline:5px;margin-block-start: 20px;}
+	.footer2 h3{text-align: center;border-top: 1px solid white;padding-block-start:20px;display: block;}
+	</style>
+
+</head>
+<body>
+	<!---------------------------------------------------Home---------------------------------->
+	<section class="header">
+		<div class= "nav1">
+			<div class="nav1-h">
+				<img src="D:\new downloads\project images\University-PNG-HD-Image.png">
+				<h1>JNTU ANATHAPUR UNIVERSITY</h1>
+			</div>
+		
+			<div class = " nav-links">
+			   <ul>
+				    <a href="Uindex.html"><li>HOME</li></a>
+					<a href="Uabout.html"><li>ABOUT</li></a>
+					<a href="Ucourse.html"><li>COURSE</li></a>
+					<a href="Ublob.html"><li>BLOG</li></a>
+					<a href="Ucontact.htnl"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="s1">
+			<div class="left">
+				<i class="fa-solid fa-lock"></i><span>Staff Login</span>
+				<i class="fa-solid fa-lock"></i></i><span>Student Login</span>
+			</div>
+			<div class="middle">
+				<marquee>
+					<img src="D:\new downloads\project images\new.gif"><span>Examnination Notification</span> 
+					<img src="D:\new downloads\project images\new.gif"><span>Get Ready To Explore The Genius In You With Genius 2023<span> 
+					<img src="D:\new downloads\project images\new.gif"><span>Enrollment Form Notification 2022 23</span>
+				</marquee>
+					
+			</div>
+			<div class="right">
+				<i class="fa fa-comment"></i><span>Admissions</span>
+			</div>
+		</div>
+		<div class="nav">
+			<img src="https://demo.dezven.com/project/web-design/school-website-using-html-css/images/banner.jpg">
+		</div>
+	</section>
+	<!---------------------------------------------------courses---------------------------------->
+	<div class="header-p">
+		<h1>Courses</h1>
+	<div class="header-p1">
+		<div class="left-p">
+			<h1>Our Popular Courses :</h1>
+			<p>The university offers undergraduate, postgraduate and doctorate level courses with various specializations. Few popular courses offered by JNTU Anantapur are mentioned below: Bachelor of Technology [B.Tech] Bachelor of Pharmacy [B.Pharma] Master of Business Administration [MBA] Master of Technology [M.Tech],Doctor of Philosophy [Phd] Master of Computer Application [MCA] Bachelor`s Degree of Computer [BDC] Diploma of Computer Application [DCA].</p>
+		</div>
+		<div class="right-p">
+			<span class="right-p-1">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Bachelor of Technology [B.Tech]</span>
+			</span>
+			<span class="right-p-2">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Bachelor of Pharmacy [B.Pharma]</span>
+			</span>
+			<span class="right-p-3">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Master of Business Administration [MBA]</span>
+			</span>
+			<span class="right-p-4">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Doctor of Philosophy [Phd]</span>
+			</span>
+			<span class="right-p-5">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Master of Computer Application [MCA]</span>
+			</span>
+			<span class="right-p-6">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Bachelor`s Degree of Computer [BDC]</span>
+			</span>
+			<span class="right-p-7">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Diploma of Computer Application [DCA]</span>
+			</span>
+			<span class="right-p-8">
+				<i class="fa fa-graduation-cap"></i><br>
+				<span>Master of Technology [M.Tech]</span>
+			</span>
+		</div>
+
+	</div>
+  </div>
+  <!--------------------------------------------------courses list---------------------------------->
+  <div class="course-list">
+  	<div class="list-h">
+  		<div class="list-m">
+  			<h1>Courses-List</h1>
+  			<table>
+  				
+  				<tr><th>S.No<th>Degree<th>Course /Specialization Name<th>Category<th>Duration<th>Course Type</th></tr>
+  				<tr><td>1<td>	B.Tech<td>	Aeronautical Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>2<td>	B.Tech<td>	Bio-Technology<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>3<td>	B.Tech<td>	Chemical Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>4<td>	B.Tech	<td>Civil Engineering<td>	U.G Programs<td>	4	<td>Full-Time</td></tr>
+                <tr><td>5<td>	B.Tech<td>	Computer Science & Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>6<td>	B.Tech<td>	Computer Science & Systems Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>7<td>	B.Tech<td>	Electrical and Electronics Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>8<td>	B.Tech<td>	Electronics & Control Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>9<td>	B.Tech<td>	Electronics and Communications Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>10<td>	B.Tech<td>	Electronics and Computer Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>11<td>	B.Tech<td>	Electronics and Instrumentation Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>12<td>	B.Tech<td>	Information Technology<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>13<td>	B.Tech<td>	Mechanical Engineering<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>14<td>	B.Tech<td>	Mechanical Engineering (Mechatronics)<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>15<td>	B.Pharmacy<td>	Bachelor of Pharmacy<td>	U.G Programs<td>	4<td>	Full-Time</td></tr>
+                <tr><td>16<td>	Pharma.D<td>	Pharma D<td>	U.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>17<td>	Pharma.D<td>	Pharm.D(PB)<td>	U.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>18<td>	M.Tech<td>	Advanced Manufacturing Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>19<td>	M.Tech<td>	Bio-Technology<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>20<td>	M.Tech<td>	CAD/CAM<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>21<td>	M.Tech<td>	Civil Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>22<td>	M.Tech<td>	Communication Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>23<td>	M.Tech<td>	Computer Aided Structural Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>24<td>	M.Tech<td>	Computer Networks<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>25<td>	M.Tech<td>	Computer Networks and Information Security<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>26<td>	M.Tech<td>	Computer Science<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>27<td>	M.Tech<td>	Computer Science and Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>28<td>	M.Tech<td>	Construction Planning & Management<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>29<td>	M.Tech<td>	Control Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>30<td>	M.Tech<td>	Digital Electronics and Communication Systems<td>P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>31<td>	M.Tech<td>	Digital Systems & Computer Electronics<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>32<td>	M.Tech<td>	Electrical Power Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>33<td>	M.Tech<td>	Electrical Power Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>34<td>	M.Tech<td>	Electronics and Communication Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>35<td>	M.Tech<td>	Embedded Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>36<td>	M.Tech<td>	Embedded Systems and VLSI<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>37<td>	M.Tech<td>	Geotechnical Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>38<td>	M.Tech<td>	Highway Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>39<td>	M.Tech<td>	Information Technology<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>40<td>	M.Tech<td>	Machine Design<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>41<td>	M.Tech<td>	Micro & Nano Electronics<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>42<td>	M.Tech<td>	Power & Industrial Drives<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>43<td>	M.Tech<td>	Power Electronics<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>44<td>	M.Tech<td>	Power Electronics & Drives<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>45<td>	M.Tech<td>	Power Electronics and Electrical Drives<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>46<td>	M.Tech<td>	Power Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>47<td>	M.Tech<td>	Production Engineering & Engineering Design<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>48<td>	M.Tech<td>	Refrigeration and Air conditioning<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>49<td>	M.Tech<td>	Software Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>50<td>	M.Tech<td>	Structural Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>51<td>	M.Tech<td>	Structural Engineering & Construction Management<td>P.G Programs<td>2<td>	Full-Time</td></tr>
+                <tr><td>52<td>	M.Tech<td>	Thermal Engineering<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>53<td>	M.Tech<td>	Thermal Sciences & Energy Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>54<td>	M.Tech<td>	VLSI<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>55<td>	M.Tech<td>	VLSI & Embedded Systems<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>56<td>	M.Tech<td>	VLSI and Embedded Systems Design<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>57<td>	M.Tech<td>	VLSI Design<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>58<td>	M.Tech<td>	VLSI System Design<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>59<td>	M.Pharmacy<td>	Hospital and Clinical Pharmacy<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>60<td>	M.Pharmacy<td>	Industrial Pharmacy<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>61<td>	M.Pharmacy<td>	Pharmaceutical Analysis<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>62<td>	M.Pharmacy<td>	Pharmaceutical Analysis & Quality Control<td>P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>63<td>	M.Pharmacy<td>	Pharmaceutical Analysis and Quality Assurance<td>	P.G Programs<td>2<td>Full-Time</td></tr>
+                <tr><td>64<td>	M.Pharmacy<td>	Pharmaceutical Chemistry<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>65<td>	M.Pharmacy<td>	Pharmaceutical Technology<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>66<td>	M.Pharmacy<td>	Pharmaceutics<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>67<td>	M.Pharmacy<td>	Pharmaceutics-Drug Regulatory Affairs<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>68<td>	M.Pharmacy<td>	Pharmacognosy<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>69<td>	M.Pharmacy<td>	Pharmacology<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>70<td>	M.Pharmacy<td>	Pharmacy Practice<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>71<td>	MBA<td>	Finance<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>72<td>	MBA<td>	Marketing<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>73<td>	MBA<td>	Master of Business Administration<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>74<td>	MCA<td>	Master of Computer Applications<td>	P.G Programs<td>	2<td>	Full-Time</td></tr>
+                <tr><td>75<td>	Pharma.D<td>	Pharm.D (P.B)<td>	P.G Programs<td>	6<td>	Full-Time</td></tr>
+                <tr><td>76<td>	Integrated<td>	Management<td>	Integrated<td>	2<td>	Full-Time</td></tr>
+                <tr><td>77<td>	Integrated<td>	Science<td>	Integrated<td>	2<td>	Part-Time</td></tr>
+                <tr><td>78<td>	Dual Degree<td>	Management<td>	Dual Degree<td>	2<td>	Full-Time</td></tr>
+                <tr><td>79<td>	Dual Degree<td>	MCA<td>	Dual Degree<td>	3<td>	Full-Time</td></tr>
+                <tr><td>80<td>	Dual Degree<td>	PS<td>	Dual Degree<td>	2<td>	Full-Time</td></tr>
+
+  			</table>
+  		</div>
+  	</div>
+  </div>
+   
+	<!---------------------------------------colleges---------------------------------->
+    <div class="colleges">
+    	<h2>Explore more Engineering Colleges in Andhra Pradesh</h2>
+    	<div class="col-row">
+    		<div class="col-column">
+    			<table>
+    				<tr><th>S.No<th>By Specialisation</th></tr>
+    				<tr><td>1<td>Electrical and Electronic Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>2<td>Mechanical Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>3<td>Civil Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>4<td>Electronic & Communication Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>5<td>Computer Science Engineering Colleges in Andhra Pradesh</td></tr>
+    			</table>
+    	    </div>
+    	    <div class="col-column">
+    	    	<table>
+    				<tr><th>S.No<th>By Degree</th></tr>
+    				<tr><td>1<td>PGD Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>2<td>B-Tech Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>3<td>Diplama Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>4<td>EM-Tech  Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>5<td>B.Arts Colleges in Andhra Pradesh</td></tr>
+    			</table>
+    	    </div>
+    	    <div class="col-column">
+    	    	<table>
+    				<tr><th>S.No<th>By Course</th></tr>
+    				<tr><td>1<td>B-Tech Electrical and Electronic Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>2<td>BB-Tech Mechanical Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>3<td>B-Tech Chemical Engineering Colleges in Andhra Pradesh</td></tr>
+    				<tr><td>4<td>B-Tech Mining Engineering Colleges in Andhra Pradeshh</td></tr>
+    				<tr><td>5<td>B-Tech Electrical Engineering Colleges in Andhra Pradesh</td></tr>
+    			</table>
+        	</div>
+    	</div>	
+    </div>
+    <!---------------------------------------------------register---------------------------------->
+    <div class="register">
+    	<h2>==========Register With Us===========</h2>
+    	<div class="r-row">
+    		<form action="https://formspree.io/f/mvojgbwa" method="POST">
+				<input type="text" placeholder="Name"name="username" required>
+				<input type="text" placeholder="Mobile"name="Number" required>
+				<input type="email" placeholder="Email"name="emailid" required>
+				<select id="se1" name="content1">
+					<option>Select Level</option>
+					<option>B-Tech</option>
+					<option>M-Tech</option>
+					<option>B.Pharmacy</option>
+					<option>Pharma.D</option>
+					<option>M.Pharmacy</option>
+					<option>MBA</option>
+					<option>MCA</option>
+					<option>Duel Degree</option>
+					<option>Integrated</option>
+				</select>
+				<select id="se2"name="content2">
+					<option>Select Stream</option>
+					<option> Mechanical Engineering</option>
+					<option>Management</option>
+					<option>Information Technology</option>
+					<option>Aeronautical Engineering</option>
+					<option>Bio-Technology</option>
+					<option>Chemical Engineering</option>
+					<option>Civil Engineering</option>
+					<option>Computer Networks</option>
+					<option>Electrical and Electronics Engineering</option>
+					<option>Electronics & Control Engineering</option>
+					<option>Electronics and Communications Engineering</option>
+					<option>Electronics and Computer Engineering</option>
+					<option>Bachelor of Pharmacy</option>
+					<option>Pharma D</option>
+					<option>Advanced Manufacturing Systems</option>
+					<option>Bio-Technology</option>
+					<option>CAD/CAM	</option>
+					<option>Communication Systems</option>
+					<option>Digital Electronics and Communication Systems</option>
+					<option>Digital Systems & Computer Electronics</option>
+					<option>Electrical Power Engineering</option>
+					<option>Electrical Power Systems</option>
+					<option>Micro & Nano Electronics</option>
+					<option>Highway Engineering</option>
+					<option>Computer Science & Systems Engineering</option>
+					<option>Mechanical Engineering (Mechatronics)</option>
+					<option>Computer Aided Structural Engineering</option>
+					<option>Computer Networks and Information Security</option>
+					<option>Power Electronics</option>
+					<option>Information Technology</option>
+					<option>Power Electronics & Drives</option>
+					<option>Power Systems</option>
+					<option>Software Engineering</option>
+				</select>
+				<button type="submit">Submit Details</button>
+			</form>	
+    	</div>
+    </div>
+	<!---------------------------------------------------footer 2---------------------------------->
+	<div class="footer2">
+		<div class="footer2-h">
+			<div>
+				<h2>Download</h2>
+			   <div class="footer2-left1">
+			   	    <span>Procedure for Organizing Graduation day</span><br>
+			     	<span>Guidelines for Donation</span><br>
+			    	<span>Research & Development</span><br>
+			    	<span>Annual Reports</span><br>
+			    	<span>Affiliated Colleges</span><br>
+			    	<span>Syllabus</span><br>
+			    	<span>Examination Branch Application Forms</span><br>
+			    	<span>News Letters</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Postal Contacts</h2>
+			   <div class="footer2-left1">
+			   	    <span>The Register,</span><br>
+			    	<span>JNTU University Ananthapur,</span><br>
+			    	<span>Ananthapuram-515002</span><br>
+			    	<span>Andhra Pradesh,Inndia</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Information Links</h2>
+			   <div class="footer2-left1">
+			    	<span>Placements</span><br>
+			    	<span>Online Training</span><br>
+			    	<span>Results</span><br>
+			    	<span>Registered Ph D Scholers</span><br>
+			    	<span>Anti Ragging</span><br>
+			    	<span>List Of Suggested Books Indian Authors</span><br>
+			    	<span>NSS Cell</span><br>
+			    	<span>Events</span><br>
+			   </div>
+			</div>
+			<div>
+				<h2>Get In Touch</h2>
+			   <div class="footer2-left1">
+			   	   <i class="fa-solid fa-envelope"></i><span>Email:info@jntuananthapur.com</span><br>
+                   <i class="fa-brands fa-square-whatsapp"></i><span>Whatsap No:+91-123456789</span><br>
+                   <i class="fa-solid fa-address-book"></i><span>Contact No:+91-(123)-4567890</i></span><br>
+                   <i class="fa-solid fa-globe"></i><span>Website:Http://www.jntu.com</span><br>
+                   <a href="https://www.facebook.com/"><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=80&h=80&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><img src="https://th.bing.com/th?id=OSK.HNYBZh1b8THsU04fx-fRn4aQAqKMN2-KE_KCboGdg96d15U&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://in.linkedin.com"><img src="https://th.bing.com/th?id=OSK.HNYB5Zkp2MDvwR2nXmYMT4cVoTssZhyvU6zyn7sQOaGoGHc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+                   <a href="https://www.instagram.com/"><img src="https://th.bing.com/th?id=OSK.HNYBSXctCXxuO8S5PKFITXGw3B2MX3XPC_yf7PQd_zQILsc&w=64&h=64&c=7&o=6&oif=webp&dpr=1.6&pid=SANGAM"></a>
+			   </div>
+			</div>
+			
+		</div>
+		<h3>Copyright @ 2023,Jntuananthour.com.All Rights are Reserved</h3>
+			
+			
+	</div>>  
+  </body>
+</html>
+
